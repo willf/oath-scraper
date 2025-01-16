@@ -5,13 +5,12 @@ import time
 from playwright.sync_api import sync_playwright
 
 headers = {
-    "User-Agent": "Will Fitzgerald",
-    "From": "will.fitzgerald@gmail.com",  # This is another valid field
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
 }
 
 
 def page(number):
-    return f"https://www.nottingham.ac.uk/~brzoaths/database/oath_reference_details.php?oathID={number}"
+    return f"https://www.nottingham.ac.uk/~brzoaths/database/oath_reference_details.php?oathID={number}&referenceTypeID=&authorIDName=&workID=0&workCategory=&workGenre=&takenStateID=0&Fictional=U&markerID=&sanctifyingCircumstances=N&oathDate=&invokedGodID=0&swearerID=0&sweareeID=0&swearerStateID=0&sweareeStateID=0&swearerStatus=&sweareeStatus=&swearerAgeClass=&sweareeAgeClass=&swearerGenderID=&sweareeGenderID=&centuryID=0&Taken=U&Fulfilled=U"
 
 
 def page_is_invalid(html):
