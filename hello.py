@@ -5,7 +5,7 @@ import time
 from playwright.sync_api import sync_playwright
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36",
 }
 
 
@@ -386,6 +386,5 @@ function openwin ( url, wintype )
 """
 
 if __name__ == "__main__":
-    # Example usage:
     features_json = get_features_for_range(3885, 3887)
     print(features_json)
