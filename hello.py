@@ -2,6 +2,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import time
+from playwright.sync_api import sync_playwright
 
 headers = {
     "User-Agent": "Will Fitzgerald",
@@ -19,6 +20,12 @@ def page_is_invalid(html):
     )
 
 
+def get_page_content(url: str, browser):
+    page = browser.new_page()
+    page.goto(url)
+    return page.content()
+
+
 def extract_features(html):
     soup = BeautifulSoup(html, "html.parser")
     rows = soup.find_all("tr")
@@ -32,15 +39,13 @@ def extract_features(html):
 
 
 def get_features_for_range(start, end):
-    all_features = []
-    for number in range(start, end + 1):
-        url = page(number)
-        response = requests.get(url, headers=headers)
-        print(
-            f"Requesting oath {number} from {url}; status code: {response.status_code}"
-        )
-        if response.status_code == 200:
-            html = response.text
+    with sync_playwright() as p:
+        print("Launching browser")
+        browser = p.chromium.launch(headless=True)
+        all_features = []
+        for number in range(start, end + 1):
+            url = page(number)
+            html = get_page_content(url, browser)
             if page_is_invalid(html):
                 print(f"Invalid page for oath {number}")
                 continue
@@ -48,8 +53,8 @@ def get_features_for_range(start, end):
             features = dict(tuples)
             print(f"Extracted features for oath {number}: {features}")
             all_features.append(features)
-        if number != end:
-            time.sleep(10)
+            if number != end:
+                time.sleep(10)
     return json.dumps(all_features)
 
 
