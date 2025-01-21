@@ -35,13 +35,7 @@ def extract_sw_features(text):
     number_of_left_parens = text.count("(")
     number_of_right_parens = text.count(")")
     if number_of_left_parens != number_of_right_parens and number_of_left_parens != 1:
-        print(
-            "Problem with number of left and right parens (should be equal or one)",
-            text,
-            number_of_left_parens,
-            number_of_right_parens,
-        )
-        return (text, "", "", "", "")
+
     first_div = "(".join(text.split("(")[0:1]).strip()
     second_div = text.split("(")[-1].strip()[0:-1]
     second_div_parts = second_div.split(",")
