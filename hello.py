@@ -1,8 +1,10 @@
-import requests
+import re
 import json
 from bs4 import BeautifulSoup
 import time
 from playwright.sync_api import sync_playwright
+import os
+import csv
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36",
@@ -27,6 +29,48 @@ def get_page_content(url: str, browser):
 
 def extract_features(html):
     soup = BeautifulSoup(html, "html.parser")
+    # get id from title <title> Oath 2595 results - Oaths in Archaic and Classical Greece </title> -> 2595
+    title = soup.find("title").get_text(strip=True)
+    oath_id = int(title.split()[1])
+    yield ("oath_id", oath_id)
+    # get h2 element inside #content from <div id="content" class="feature"><br><h2><strong>Oath ID 2: Aristophanes, <em>Clouds</em>, 82-83,</strong> (literary, Comic., )</h2><br>
+    h2 = soup.select_one("#content h2")
+    if h2:
+        strong_text = h2.find("strong").get_text(strip=True)
+        em_text = h2.find("em").get_text(strip=True)
+        all_text = h2.get_text(strip=True)
+        rev_text = all_text[::-1]
+        tgd_text = re.search(r"\)([^)]+)\(", rev_text).group(1)[::-1]
+        post_colon_text = ":".join(strong_text.split(":")[1:])
+        post_colon_text_parts = post_colon_text.split(",")
+        if len(post_colon_text_parts) < 4:
+            print(
+                "Problem with post_colon_text_parts (should be at least four)",
+                post_colon_text,
+                "$".join(post_colon_text_parts),
+            )
+        author = post_colon_text_parts[0].strip()
+        work = em_text.strip()
+        reference = ",".join(post_colon_text_parts[2:]).strip()[
+            :-1
+        ]  # drop last character which is a comma
+        tgd_parts = tgd_text.split(",")
+        if len(tgd_parts) != 3:
+            print(
+                "Problem with tgd_parts (should be three)",
+                tgd_text,
+                "$".join(tgd_parts),
+            )
+        work_type = tgd_parts[0].strip()
+        genre = tgd_parts[1].strip()
+        work_date = tgd_parts[2].strip()
+        yield ("author", author)
+        yield ("work", work)
+        yield ("reference", reference)
+        yield ("work_type", work_type)
+        yield ("genre", genre)
+        yield ("work_date", work_date)
+
     rows = soup.find_all("tr")
     for row in rows:
         tds = row.find_all("td")
@@ -40,13 +84,14 @@ def extract_features(html):
 def get_features_for_range(start, end):
     with sync_playwright() as p:
         print("Launching browser")
-        browser = p.chromium.launch(headless=True)
+        browser = p.webkit.launch(headless=True)
         all_features = []
         for number in range(start, end + 1):
             url = page(number)
             html = get_page_content(url, browser)
             if page_is_invalid(html):
                 print(f"Invalid page for oath {number}")
+                time.sleep(60)
                 continue
             tuples = list(extract_features(html))
             features = dict(tuples)
@@ -55,6 +100,65 @@ def get_features_for_range(start, end):
             if number != end:
                 time.sleep(10)
     return json.dumps(all_features)
+
+
+def get_page_content(n, browser):
+    page = browser.new_page()
+    page.goto("https://www.nottingham.ac.uk/~brzoaths/database/")
+    page.locator("#oathReferenceID").click()
+    page.locator("#oathReferenceID").fill(f"{n}")
+    page.get_by_role("button", name="Search").first.click()
+    page.wait_for_load_state("load")
+    return page.content()
+
+
+def get_files_for_range(start, end):
+    with sync_playwright() as p:
+        print("Launching browser")
+        browser = p.webkit.launch(headless=True)
+        for number in range(start, end + 1):
+            # check if oath is already downloaded
+            if os.path.exists(f"oaths/{number}.html"):
+                print(f"Oath {number} already downloaded")
+                continue
+            html = get_page_content(number, browser)
+            with open(f"oaths/{number}.html", "w") as f:
+                f.write(html)
+            print(f"Downloaded oath {number}")
+
+
+def get_features_from_files(directory):
+    # grab all *.html file in this directory and extract features
+    all_features = []
+    for file in os.listdir(directory):
+        if file.endswith(".html"):
+            with open(directory + "/" + file, "r", errors="ignore") as f:
+                print("Extracting features from", file)
+                html = f.read()
+                try:
+                    tuples = list(extract_features(html))
+                except Exception as e:
+                    print("Error extracting features from", file)
+                    print(e)
+                    continue
+                features = dict(tuples)
+                all_features.append(features)
+    return json.dumps(all_features)
+
+
+def convert_json_to_csv(json_data, csv_file_path):
+    data = json.loads(json_data)
+    if not data:
+        return
+
+    # Extract headers from the first dictionary
+    headers = data[0].keys()
+
+    with open(csv_file_path, "w", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=headers)
+        writer.writeheader()
+        for row in data:
+            writer.writerow(row)
 
 
 example_html = """
@@ -386,5 +490,7 @@ function openwin ( url, wintype )
 """
 
 if __name__ == "__main__":
-    features_json = get_features_for_range(3885, 3887)
-    print(features_json)
+    features_json = get_features_from_files("oaths")
+    # print(features_json)
+    convert_json_to_csv(features_json, "all_features.csv")
+    # get_files_for_range(2, 3885)
