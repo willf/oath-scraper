@@ -27,6 +27,40 @@ def get_page_content(url: str, browser):
     return page.content()
 
 
+def extract_sw_features(text):
+    # Friend John (male, adolescent, free, Athenian)
+    # returns ("Friend John", "male", "adolescent", "free", "Athenian")
+    # Chorus (male) (n/a, mature, free, n/a)
+    # returns ("Chorus (male)", "n/a", "mature", "free", "n/a")
+    number_of_left_parens = text.count("(")
+    number_of_right_parens = text.count(")")
+    if number_of_left_parens != number_of_right_parens and number_of_left_parens != 1:
+        print(
+            "Problem with number of left and right parens (should be equal or one)",
+            text,
+            number_of_left_parens,
+            number_of_right_parens,
+        )
+        return (text, "", "", "", "")
+    first_div = "(".join(text.split("(")[0:1]).strip()
+    second_div = text.split("(")[-1].strip()[0:-1]
+    second_div_parts = second_div.split(",")
+    if len(second_div_parts) != 4:
+        print(
+            "Problem with second_div_parts (should be four)",
+            second_div,
+            second_div_parts,
+        )
+        return (first_div, "", "", "", "")
+    return (
+        first_div,
+        second_div_parts[0].strip(),
+        second_div_parts[1].strip(),
+        second_div_parts[2].strip(),
+        second_div_parts[3].strip(),
+    )
+
+
 def extract_features(html):
     soup = BeautifulSoup(html, "html.parser")
     # get id from title <title> Oath 2595 results - Oaths in Archaic and Classical Greece </title> -> 2595
@@ -78,7 +112,26 @@ def extract_features(html):
             feature_name = tds[1].get_text(strip=True)
             if feature_name.endswith(":"):
                 feature_value = tds[2].get_text(strip=True)
-                yield (feature_name[:-1], feature_value)
+                if feature_name == "Swearer:":
+                    swearer, gender, age, status, origin = extract_sw_features(
+                        feature_value
+                    )
+                    yield ("swearer", swearer)
+                    yield ("swearer-gender", gender)
+                    yield ("swearer-age", age)
+                    yield ("swearer-status", status)
+                    yield ("swearer-origin", origin)
+                elif feature_name == "Swearee:":
+                    swearee, gender, age, status, origin = extract_sw_features(
+                        feature_value
+                    )
+                    yield ("swearee", swearee)
+                    yield ("swearee-gender", gender)
+                    yield ("swearee-age", age)
+                    yield ("swearee-status", status)
+                    yield ("swearee-origin", origin)
+                else:
+                    yield (feature_name[:-1], feature_value)
 
 
 def get_features_for_range(start, end):
