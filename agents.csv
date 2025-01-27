@@ -1,0 +1,1353 @@
+agent,gender,age,status,origin
+n/a,n/a,n/a,unknown,n/a
+Philip of Macedon,male,mature,power-holder,Macedonian
+Philip of Macedon's representatives,male,mature/old,power-holder,Macedonian
+Representatives,male,mature/old,power-holder,Athenian
+Representatives of the allies of Athens,male,mature/old,power-holder,various
+Epheboi,male,adolescent,free,Athenian
+Presiding magistrate,male,mature/old,power-holder,Athenian
+Dikastai,male,mature/old,free,Athenian
+Inlaw,male,old,free,Athenian
+Euripides,male,old,free,Athenian
+Aeschines,male,mature,free,Athenian
+Tissaphernes,male,mature,power-holder,Persian
+The brother of the King's wife,male,mature,power-holder,Persian
+Greek generals,male,mature,power-holder,various
+Greek lochagoi,male,mature,power-holder,various
+Spartan,male,mature,free,Spartan
+First Athenian,male,mature,free,Athenian
+Peisetaerus,male,old,free,Athenian
+Chorus,male) (n/a,mature,free,n/a
+Representatives of the Italian Locrians,male,mature/old,power-holder,Locrian
+Demosthenes,male,mature,chattel-slave,n/a
+Sausage-seller,male,adolescent,free,Athenian
+Citizens,male,any adult age,free,Athenian
+Polus,male,mature,free,Acragantine
+Socrates,male,mature/old,free,Athenian
+Philocleon,male,old,free,Athenian
+Bdelycleon,male,mature,free,Athenian
+An imaginary objector,male,mature/old,free,Athenian
+Diodorus,male,mature,free,Athenian
+Slave,male,mature,chattel-slave,n/a
+Xanthias,male,mature,chattel-slave,n/a
+see remarks,n/a,n/a,unknown,n/a
+Charmides,male,mature,free,Athenian
+Critylla,female,old,free,Athenian
+Trojans,male,any adult age,free,Trojan
+Cleomenes,male,mature,power-holder,Spartan
+Greek army,male,any adult age,free,various Greek
+Trojan army,male,any adult age,free,Trojan
+Apollo,male,mature,power-holder,n/a
+World at large,n/a,n/a,unknown,n/a
+Protarchus,male,adolescent,free,Athenian
+Dicaeopolis,male,old,free,Athenian
+unknown,n/a,unknown,unknown,unknown
+Aeschylus,male,old,free,Athenian
+Dionysus,male,mature,power-holder,n/a
+Hippias,male,mature,free,Elean
+Aphobus,male,mature,free,Athenian
+Pledger,male,any adult age,free,Gortynian
+Defendant,male,any adult age,free,Athenian
+Agesilaus,male,mature,power-holder,Spartan
+Chremylus,male,old,free,Athenian
+Blepsidemus,male,old,free,Athenian
+Cyrus,male,child,free,Persian
+Cambyses,male,mature,power-holder,Persian
+Athenians,male,any adult age,free,Athenian
+Aristophanes,male,mature,free,Athenian
+Dercylidas,male,mature,power-holder,Spartan
+Meidias,male,mature/old,power-holder,Skepsiot
+Informer,male,mature,free,Athenian
+Honest Man,male,mature,free,Athenian
+Showman,male,mature,free,Syracusan
+Theages,male,adolescent,free,Athenian
+Melanippe?,female,adolescent,free,Boeotian
+Artasyras,male,mature,power-holder,Persian
+Artyphius,male,mature,power-holder,Persian
+Envoys,male,mature/old,power-holder,Arcadian
+Artemis,female,n/a,power-holder,n/a
+Zeus,male,n/a,power-holder,n/a
+Generals,male,mature/old,power-holder,Eretrian
+Bouleutai,male,mature/old,free,Eretrian
+Hippeis,male,adolescent/mature,free,Eretrian
+Archai,male,mature/old,power-holder,Eretrian
+Incoming bouleutai,male,mature/old,free,Athenian
+Elymian representatives,male,mature/old,power-holder,various communities
+Phoenician representatives,male,mature/old,power-holder,various communities
+Prosecutor,male,any adult age,free,Athenian
+Oedipus,male,mature,power-holder,Theban
+Jocasta,female,mature,power-holder,Theban
+Creon,male,mature,power-holder,Theban
+Ruling Ionians,male,mature/old,power-holder,various Ionian poleis
+Croesus,male,mature,power-holder,Lydian
+Megarian,male,mature,free,Megarian
+The girls,female,child,free,Megarian
+Aristotle,male,mature,free,Athenian
+Pheidippides,male,adolescent,free,Athenian
+Strepsiades,male,old,free,Athenian
+Argonauts,male,adolescent/mature,free,various Greek
+Lemnian women,female,any adult age,free,Lemnian
+Xerxes,male,mature,power-holder,Persian
+Artaynte,female,mature,free,Persian
+An imaginary respondent,male,mature/old,free,Athenian
+Calonice,female,mature,free,Athenian
+Lysistrata,female,mature,free,Athenian
+Helen's suitors,male,adolescent/mature,power-holder,various Greek
+Tyndareus,male,old,power-holder,Spartan
+Representatives of the Opuntian Locrians,male,mature/old,power-holder,Locrian
+Hermogenes,male,adolescent,free,Athenian
+Pleistoanax,male,mature/old,power-holder,Spartan
+Agis,male,mature/old,power-holder,Spartan
+Pleistolas,male,mature/old,power-holder,Spartan
+Damagetus,male,mature/old,power-holder,Spartan
+Chionis,male,mature/old,power-holder,Spartan
+Metagenes,male,mature/old,power-holder,Spartan
+Acanthus,male,mature/old,power-holder,Spartan
+Daithus,male,mature/old,power-holder,Spartan
+Ischagoras,male,mature/old,power-holder,Spartan
+Philocharidas,male,mature/old,power-holder,Spartan
+Zeuxidas,male,mature/old,power-holder,Spartan
+Antippus,male,mature/old,power-holder,Spartan
+Tellis,male,mature/old,power-holder,Spartan
+Alcinadas,male,mature/old,power-holder,Spartan
+Empedias,male,mature/old,power-holder,Spartan
+Menas,male,mature/old,power-holder,Spartan
+Laphilus,male,mature/old,power-holder,Spartan
+Lampon,male,mature/old,power-holder,Athenian
+Isthmionicus,male,mature/old,power-holder,Athenian
+Nicias,male,mature/old,power-holder,Athenian
+Laches,male,mature/old,power-holder,Athenian
+Euthydemus,male,mature/old,power-holder,Athenian
+Procles,male,mature/old,power-holder,Athenian
+Pythodorus,male,mature/old,power-holder,Athenian
+Hagnon,male,mature/old,power-holder,Athenian
+Myrtilus,male,mature/old,power-holder,Athenian
+Thrasycles,male,mature/old,power-holder,Athenian
+Theagenes,male,mature/old,power-holder,Athenian
+Aristocrates,male,mature/old,power-holder,Athenian
+Iolcius,male,mature/old,power-holder,Athenian
+Timocrates,male,mature/old,power-holder,Athenian
+Leon,male,mature/old,power-holder,Athenian
+Lamachus,male,mature/old,power-holder,Athenian
+Representatives of Peloponnesian League members,male,mature/old,power-holder,various
+Representatives of the Chalcidians in Thrace,male,mature/old,power-holder,various
+Three/five Athenians,male,mature/old,power-holder,Athenian
+Hestia,female,adolescent,power-holder,n/a
+The men of the Piraeus,male,any adult age,free,Athenian
+The men of the asty,male,any adult age,free,Athenian
+Taurus son of Echetimidas,male,mature,power-holder,Spartan
+"Athenaeus, son of Pericleidas",male,mature,power-holder,Spartan
+Aeneas son of Ocytus,male,mature,power-holder,Corinthian
+Euphamidas son of Aristonymus,male,mature,power-holder,Corinthian
+Damotimus son of Naucrates,male,mature,power-holder,Sicyonian
+"Onasimus, son of Megacles",male,mature,power-holder,Sicyonian
+"Nicasus, son of Cecalus",male,mature,power-holder,Megarian
+Menecrates son of Amphidorus,male,mature,power-holder,Megarian
+Amphias son of Eupalidas,male,mature,power-holder,Epidaurian
+Nicostratus,male,mature,power-holder,Athenian
+"Autocles, son of Tolmaeus",male,mature,power-holder,Athenian
+Chorus-leader,n/a,mature,free,n/a
+Callicles,male,adolescent,free,Athenian
+Plangon,female,mature,free,Athenian
+Arbitrator,male,mature,free,Athenian
+First Old Woman,female,old,free,Athenian
+Epigenes,male,adolescent,free,Athenian
+Tigranes' wife,female,mature,power-holder,Armenian
+Tigranes,male,adolescent,power-holder,Armenian
+Paphlagon,male,mature,chattel-slave,n/a
+Cleinias,male,old,free,Cretan
+Athenian,male,old,free,Athenian
+Ephors,male,mature/old,power-holder,Spartan
+The kings,male,any adult age,power-holder,Spartan
+Lysis,male,child,free,Athenian
+Diotima,female,mature,free,Mantinean
+Callistratus,male,mature,free,Athenian
+Olympiodorus,male,mature,free,Athenian
+Euelpides,male,old,free,Athenian
+Second Woman,female,mature,free,Athenian
+Praxagora,female,mature,free,Athenian
+Heracles,male,mature,chattel-slave,n/a
+Witnesses,male,any adult age,free,Athenian
+The Eighty,male,mature/old,power-holder,Argive
+The Artynae,male,mature/old,power-holder,Argive
+Odysseus,male,mature,power-holder,Ithacan
+Neoptolemus,male,adolescent,power-holder,Phthian
+Philoctetes,male,mature,free,Malian
+Representatives of Greek states except Sparta,male,mature/old,power-holder,various
+Pelias,male,mature,power-holder,Iolcian
+Jason,male,adolescent,power-holder,Iolcian
+Old Woman,female,old,free,Athenian
+Young man,male,adolescent,free,Athenian
+Ischomachus,male,mature,free,Athenian
+Demos,male,old,free,Athenian
+Chabrias of Aexone,male,old,power-holder,Athenian
+Chares of Angele,male,mature,power-holder,Athenian
+Iphicrates of Rhamnous,male,old,power-holder,Athenian
+Execestides,male,mature/old,power-holder,Athenian
+Alcimachus of Anagyrous,male,mature/old,power-holder,Athenian
+Diocles of Alopece,male,mature/old,power-holder,Athenian
+Wine,n/a,n/a,n/a,n/a
+Scythian archer,male,mature,chattel-slave,n/a
+Meno,male,adolescent,free,Thessalian
+Adrastus,male,mature,power-holder,Argive
+Theseus,male,mature,power-holder,Athenian
+the companion of Megabates,male,mature,free,Persian
+Cyrus the younger,male,adolescent,power-holder,Persian
+Representatives of various poleis,male,any adult age,power-holder,various
+Arbitrator(s),male,mature/old,free,Athenian
+The disputing parties,male,any adult age,free,Athenian
+Eleans,male,any adult age,free,Elean
+Other Greeks,male,any adult age,free,Greek
+Athenians in the assembly,male,any adult age,free,Athenian
+Aristippus,male,mature,free,Athenian
+The Spartan garrison,male,any adult age,free,Spartan and Spartans of inferior status
+Peace,female,mature,power-holder,n/a
+Blepyrus,male,old,free,Athenian
+Conspirators,male,any adult age,free,Samian
+Other conspirators,male,any adult age,free,Samian
+Cretan,male,old,free,Cretan
+Eumaeus,male,mature,chattel-slave,n/a
+Medea,female,mature,free,Colchian
+Ariston,male,adolescent,free,Athenian
+Alcibiades,male,adolescent,free,Athenian
+Law-givers,male,old,free,Greek
+Critobulus,male,mature,free,Athenian
+Representatives of the other Greeks,male,mature/old,power-holder,various
+Commanders,male,mature/old,power-holder,Syracusan
+Theramenes,male,mature,free,Athenian
+Hermes,male,child,power-holder,n/a
+Trygaeus,male,mature,free,Athenian
+Hera,female,mature,power-holder,n/a
+Athena,female,mature,power-holder,n/a
+Immortal gods,n/a,any adult age,power-holder,n/a
+Immortal goddesses,female,any adult age,power-holder,n/a
+Hippocrates,male,adolescent,free,Athenian
+Representatives of the Delphic Amphictony,male,mature/old,power-holder,various
+Mantitheus,male,mature,free,Athenian
+Chremes,male,old,free,Athenian
+Pheraulas,male,mature,free,Persian
+Gobryas,male,old,free,Assyrian
+Women,female,mature,free,Athenian
+Phaedrus,male,mature,free,Athenian
+Polemarchus,male,adolescent,free,Athenian
+Sacian,male,adolescent,free,Sacian
+Lampito,female,mature,free,Spartan
+Judge (dikastes),male,mature/old,power-holder,Gortynian
+Aegeus,male,mature,power-holder,Athenian
+Philip,male,mature,power-holder,Macedonian
+Derdas of Elimea,male,mature,power-holder,Macedonian
+Boeotus,male,mature,free,Athenian
+Pamphilus,male,mature,free,Athenian
+Menexenus,male,child,free,Athenian
+Lycurgus,male,mature/old,free,Athenian
+Law-guardians,male,mature/old,power-holder,Magnesian
+Artabazus,male,mature,free,Median
+Silenus,male,old,chattel-slave,n/a
+Thrasybulus,male,mature,power-holder,Athenian
+Amedocus,male,mature/old,power-holder,Thracian
+Seuthes,male,mature/old,power-holder,Thracian
+Phaenippus,male,mature,free,Athenian
+Speaker,male,mature,free,Athenian
+Lygdamis,male,mature,power-holder,Halicarnassian
+Apollodorus,male,mature,free,Athenian
+Lycambes,male,mature/old,free,Parian
+Archilochus,male,mature,free,Parian
+Philip of Macedon's companions,male,adolescent/mature,free,Macedonian
+Philoumenon,female,mature,free,unknown
+The ten kings,male,mature/old,power-holder,Atlantean
+Hypnos,male,n/a,n/a,n/a
+Ponos,male,n/a,n/a,n/a
+Simonides,male,old,free,Cean
+Hiero,male,mature,power-holder,Syracusan
+Antigone,female,adolescent,free,Theban
+Clearchus,male,mature,power-holder,Spartan
+Polynices,male,mature,free,Theban
+Amphiaraus,male,mature,power-holder,Argive
+Parthenopaeus,male,adolescent,free,Arcadian
+Hippomedon,male,mature,power-holder,Argive
+Capaneus,male,mature,power-holder,Argive
+Eteoclus,male,mature,power-holder,Argive
+Tydeus,male,mature,free,Aetolian
+Envoys from Grabus of Illyria,male,mature/old,free,Illyrian
+Ion,male,mature,free,Ephesian
+Meletus,male,adolescent/mature,free,Athenian
+Second Slave,male,mature,chattel-slave,n/a
+First Slave,male,mature,chattel-slave,n/a
+Those appointed to the boule,male,mature/old,free,Athenian
+Persian people,male,any adult age,free,Persian
+Araspas,male,adolescent,free,Median
+Theodorus,male,old,free,Cyrenian
+Myrrhine,female,mature,free,Athenian
+Democleides,male,mature,power-holder,Athenian
+Phormion,male,mature,power-holder,Athenian
+Ch[- - -],male,mature,power-holder,Athenian
+Pericles,male,mature,power-holder,Athenian
+Glaucon,male,mature,power-holder,Athenian
+Xenophon,male,mature,power-holder,Athenian
+Tlepolemus,male,mature,power-holder,Athenian
+Apaturius,male,mature,free,Athenian
+Parmenon,male,mature,free,Byzantine
+Envoys from the allies,male,mature/old,power-holder,various
+Scrutineer (euthynos),male,mature/old,free,Athenian
+Demarch,male,mature/old,power-holder,Athenian
+Wealth,male,old,power-holder,n/a
+Better Argument,male,n/a,n/a,n/a
+Worse Argument,male,n/a,n/a,n/a
+Kosmos,male,mature/old,power-holder,Drerian
+Damioi,male,mature/old,power-holder,Drerian
+The twenty of the polis,male,mature/old,power-holder,Drerian
+Cebes,male,adolescent,free,Theban
+Achilles,male,adolescent,power-holder,Phthian
+Clytemnestra,female,mature,power-holder,Argive
+Female chorus,n/a,adolescent,free,Chalcidician
+Euphiletus' half-brother,male,mature,free,Athenian
+Arbitrators,male,mature,free,Athenian
+Representatives of the allies,male,mature/old,power-holder,various
+Amasis,male,mature/old,power-holder,Egyptian
+Pittacus,male,mature,free,Lesbian
+Alcaeus,male,adolescent/mature,free,Lesbian
+Alcaeus' companions,male,mature,free,Lesbian
+Leochares,male,mature,free,Athenian
+Theban,male,mature,free,Theban
+Syracusans,male,any adult age,free,Syracusan
+"Hermocrates, son of Hermon",male,mature/old,power-holder,Syracusan
+"Heracleides, son of Lysimachus",male,mature/old,power-holder,Syracusan
+Sicanus son of Execestus,male,mature/old,power-holder,Syracusan
+Lycomedes of Mantinea,male,mature/old,power-holder,Mantinean
+King of Cappadocia,male,mature,power-holder,Cappadocian
+Phrygians,male,adolescent/mature,free,Phrygian
+Paphlagonians,male,adolescent/mature,free,Paphlagonian
+Cilicians,male,adolescent/mature,free,Cilician
+King of Assyria,male,mature,power-holder,Assyrian
+Lycaonians,male,adolescent/mature,free,Lycaonian
+Arabians,male,adolescent/mature,free,Arabian
+Phoenicians,male,adolescent/mature,free,Phoenician
+Ionians,male,adolescent/mature,free,Ionian
+Aeolians,male,adolescent/mature,free,Aeolian
+Most Greeks in Asia,male,adolescent/mature,free,Greek
+Temenus,male,mature,power-holder,Argive
+Argives,male,any adult age,free,Argive
+Demesmen,male,any adult age,free,Athenian
+Delphians,male,any adult age,free,Delphian
+Orestes,male,adolescent,power-holder,Argive
+Antilochus,male,adolescent,power-holder,Pylian
+Achaeans,male,mature,free,Achaean
+Ambassador,male,mature,free,Athenian
+Representatives of the Spartans and their allies,male,any adult age,free,various
+Representatives of the Greeks in Thrace,male,mature/old,power-holder,various
+Simon,male,mature,free,Athenian
+Damostratus,male,mature/old,free,Athenian
+Theodote,female,mature,free,Athenian
+Lamprocles,male,adolescent,free,Athenian
+An imaginary Athenian,male,any adult age,free,Athenian
+An imaginary questioner,male,any adult age,free,unknown
+Archebiades,male,mature,free,Athenian
+Callippus,male,mature,free,Athenian
+Euthycles,male,mature,free,Athenian
+Berisades,male,mature,power-holder,Thracian
+Amadocus,male,mature,power-holder,Thracian
+Cersobleptes,male,mature,power-holder,Thracian
+Friend,male,adolescent,free,Athenian
+Cotys,male,mature/old,power-holder,Paphlagonian
+Anytus,male,mature,free,Athenian
+Magistrate,male,old,free,Athenian
+Scythian archers,male,mature,chattel-slave,n/a
+Jurors,male,mature/old,free,Aeginetan
+Samian citizens,male,any adult age,free,Samian
+Tereus,male,mature,power-holder,n/a
+Phalanthus,male,mature,power-holder,Phoenician
+Iphicles,male,mature,power-holder,Greek
+Lachesis,female,mature,power-holder,n/a
+Helios,male,mature,power-holder,n/a
+Thersites,male,mature,free,Achaean
+A Spartan youth,male,adolescent,free,Spartan
+The other members of the sworn band,male,any adult age,free,Spartan
+Accused men,male,any adult age,free,Milesian
+Accused Women,female,any adult age,free,Milesian
+Adeimantus,male,adolescent,free,Athenian
+Jason of Pherae,male,mature,power-holder,Thessalian
+Tribal judges,male,mature/old,free,Athenian
+Prodicus,male,mature,free,Cean
+Theodotus (the arbitrator),male,mature,free,Athenian
+Chrysippus,male,mature,free,unknown
+Neighbour,male,old,free,Athenian
+First Creditor?,male,mature,free,Athenian
+Armenian king,male,mature,power-holder,Armenian
+Cyaxares,male,mature,power-holder,Median
+Highest officials,male,adolescent/mature,power-holder,Spartan
+Oath-commissioners,male,mature/old,power-holder,Athenian
+Plathane,female,mature/old,free,n/a
+Innkeeper,female,mature/old,free,n/a
+Poet,male,mature,free,n/a
+Cinesias,male,mature,free,Athenian
+"""Home archai""",male,mature/old,power-holder,Athenian
+Prytaneis,male,mature/old,free,Athenian
+Inlaw (in female disguise),male,old,free,Athenian
+Mica,female,mature,free,Athenian
+Teisias' son,male,mature,free,Athenian
+The speaker's mother,female,mature/old,free,Athenian
+Hippolytus,male,adolescent,free,n/a
+Nurse,female,old,chattel-slave,n/a
+Leaders of the Samian colonists,male,mature/old,power-holder,Samian
+Hector,male,mature,power-holder,Trojan
+Antisthenes,male,mature,free,Athenian
+Callias,male,adolescent,free,Athenian
+A taxiarch,male,mature,free,Persian
+Another taxiarch,male,mature,free,Persian
+Nicobulus,male,mature,free,Athenian
+Plaintiff,male,any adult age,free,Gortynian
+Crito,male,old,free,Athenian
+Epistatai of Eleusis,male,mature/old,free,Athenian
+Representatives of the other Lesbians,male,mature/old,power-holder,Other Lesbian poleis
+Representatives of the other Peloponnesians,male,mature/old,power-holder,various
+Leptines,male,mature,free,Athenian
+Envoys from the Ionian cities,male,mature/old,power-holder,various
+Chorus of Satyrs,male,adolescent,chattel-slave,n/a
+The mother,female,mature,free,Tenian
+Nicomachides,male,mature,free,Athenian
+Helot representatives,male,any adult age,semi-servile,n/a
+Artapanus,male,mature,power-holder,Persian
+Megabyzus,male,mature,power-holder,Persian
+Artapanus' 3 sons,male,adolescent,free,Persian
+Astyages,male,old,power-holder,Median
+Judges,male,mature/old,free,Athenian
+First Woman,female,mature,free,Athenian
+Mannes,male,any adult age,free,unknown
+Lycon,male,mature,free,Athenian
+Officers,male,mature/old,free,Persian
+Witnesses at a trial,male,mature,free,Ephesian
+Bearded Man,male,old,free,Athenian?
+Beardless Youth,male,adolescent,free,Athenian
+Euclides,male,mature/old,free,Megarian
+Terpsion,male,mature/old,free,Megarian
+Lichas,male,mature,free,n/a
+Deianeira,female,mature,free,n/a
+Archons,male,mature/old,power-holder,Athenian
+Amphitryon,male,mature,free,Tirynthian
+Theban heralds,male,mature/old,power-holder,Theban
+Pharnabazus,male,mature,power-holder,Persian
+Men's leader,n/a,old,free,Athenian
+Chief men of Arcadia,male,mature/old,power-holder,Arcadian
+The friends of Aristogeiton,male,mature/old,free,Athenian
+Eteocles,male,mature,power-holder,Theban
+Carion,male,mature,chattel-slave,n/a
+His dinner guests,male,any adult age,free,Median
+Iris,female,mature,power-holder,n/a
+Philoxenus of Leucas,male,mature,free,Leucadian
+Audience,n/a,unknown,unknown,unknown
+The gods,male) (n/a,any adult age,power-holder,n/a
+The goddesses,female,any adult age,power-holder,n/a
+The elder brother of the young man,male,adolescent/mature,free,Tenian
+Ptolemy,male,mature,power-holder,Macedonian
+Aristarchus,male,mature,free,Athenian
+Aristides,male,adolescent,free,Athenian
+The Ten Thousand,male,adolescent/mature,free,various
+Pantaenetus,male,mature,free,Athenian
+Perdiccas,male,mature,power-holder,Macedonian
+Representatives of the other Dorians of Sicily,male,mature/old,power-holder,various
+Thebans,male,any adult age,free,Theban
+Other Archai,male,mature,power-holder,Bottiaean
+Euxitheus,male,mature,free,Metic
+Daedalus,male,mature,free,Cretan
+Pasiphae,female,mature,power-holder,Cretan
+Thespians,male,any adult age,free,Thespian
+Licymnios,male,mature,power-holder,Greek
+Protagoras,male,mature/old,free,Abderan
+First Creditor,male,mature,free,Athenian
+Tiribazus,male,mature,power-holder,Persian
+Prosecutors,male,any adult age,free,Athenian
+The Greeks who fought against the Persians,male,any adult age,free,various
+Pindar,male,mature,free,Boeotian
+Young men,male,adolescent,free,Thasian
+Ariaeus,male,mature,power-holder,Persian
+Highest Persian officers,male,mature,power-holder,Persian
+Hystaspas,male,mature,free,Persian
+Lysicrates of Oenoe,male,mature/old,power-holder,Athenian
+Antimachus,male,mature/old,power-holder,Athenian
+Thrason of Erchia,male,mature/old,power-holder,Athenian
+Cetriporis,male,mature,power-holder,Thracian
+Representative of the Persian King,male,mature/old,power-holder,Persian
+Hypereides,male,mature/old,free,Athenian
+Demiourgoi,male,mature/old,power-holder,Mantinean
+Theoroi,male,mature/old,power-holder,Mantinean
+Polemarchs,male,mature/old,power-holder,Mantinean
+Witnesses for the defence,male,any adult age,free,Athenian
+Witnesses on behalf of Euxitheus,male,any adult age,free,Athenian
+Another imaginary Athenian,male,any adult age,free,Athenian
+Hipponax's friend,male,mature,free,Ephesian?
+Hipponax,male,mature,free,Ephesian
+Eurysthenes,male,mature,power-holder,Spartan
+Spartans,male,any adult age,free,Spartan
+Fathers of new deme members,male,mature/old,free,Athenian
+The other Greeks who fought against the Persians,male,mature/old,free,various
+Representatives of the poleis in Ceos,male,mature/old,power-holder,Cean
+Mantias,male,mature/old,free,Athenian
+The owner of the dead animal,male,mature,free,Gortynian
+Aristodicus,male,mature/old,free,Athenian
+Theaetetus,male,adolescent,free,Athenian
+Phratry members,male,any adult age,free,Athenian
+Eleusinians,male,any adult age,free,Athenian
+Members of the Peloponnesian League,male,any adult age,free,various
+Hierocles,male,mature,free,Athenian
+Someone,male,unknown,unknown,unknown
+Helen,female,mature,free,Spartan
+Menelaus,male,mature,free,Spartan
+Peloponnesian kings,male,any adult age,power-holder,various
+Hyllus,male,mature,power-holder,none
+Demon,male,mature,free,Athenian
+Eurycleia,female,old,chattel-slave,n/a
+Telemachus,male,adolescent,power-holder,Ithacan
+Accuser(s),male,mature,free,Thasian
+Thesmophylakes,male,mature/old,power-holder,Elean
+Simmias,male,adolescent,free,Theban
+Phocaeans,male,any adult age,free,Phocaean
+Old Persian kings,male,any adult age,power-holder,Persian
+Allied leaders,male,mature,free,various
+Parmenides,male,old,free,Eleatic
+Representatives of some of the Etruscans,male,mature/old,power-holder,Etruscan
+People of Cadmus,male,any adult age,free,Theban
+A divorced woman,female,adolescent/mature,free,Gortynian
+Cook,male,unknown,unknown,unknown
+Simias,male,adolescent/mature,chattel-slave,unknown
+Dioscurides,male,mature/old,power-holder,Neapolitan
+Secretaries?,male,mature/old,free,Athenian
+Hieromnemonai,male,mature/old,free,various
+Heralds,male,mature/old,free,various
+Misgolas,male,mature,free,Athenian
+Stephanus,male,mature,free,Athenian
+The followers of the Thirty,male,any adult age,free,Athenian
+The rest of the Athenians,male,any adult age,free,Athenian
+Other members of the sworn band,male,any adult age,free,Spartan
+Hyrcanians,male,any adult age,free,Hyrcanian
+The divorced wife,female,any adult age,free,Gortynian
+Sybarite representatives,male,mature/old,power-holder,Sybarite
+"New ""member""",male,any adult age,free,Athenian
+Other members,male,any adult age,free,Athenian
+All the rulers,male,mature/old,power-holder,Magnesian
+Indians,male,adolescent/mature,free,Indian
+Carians,male,adolescent/mature,free,Carian
+Battus,male,mature,power-holder,Theran
+Colonists,male,mature,free,Theran
+Aeacus,male,mature,free,n/a
+Iulietans,male,any adult age,free,Iulietan
+Carthaeans,male,any adult age,free,Carthaean
+Chabrias,male,mature,power-holder,Athenian
+Creusa,female,mature,power-holder,Athenian
+Adusius,male,mature,free,Persian
+Ancestors of Archidamus i.e. the Kings,male,any adult age,power-holder,Spartan
+Parasite,male,n/a,unknown,n/a
+Cyclops,male,mature,free,n/a
+Apodektai?,male,mature/old,free,Athenian
+Ugly man,male,mature,free,Persian
+Dinner guests,male,any adult age,free,Persian
+Corpse,male,mature/old,n/a,n/a
+Hermeias,male,mature,power-holder,Atarnean
+Erastus,male,mature,free,Scepsian
+Coriscus,male,mature,free,Scepsian
+Ariadne,female,adolescent/mature,power-holder,Cretan
+Samians,male,any adult age,free,Samian
+Athenian stratiotai,male,adolescent/mature,free,Athenian
+Thrasyllus,male,mature,power-holder,Athenian
+Phalinus,male,mature/old,power-holder,unknown
+The Athenians in Potidaea,male,any adult age,free,Athenian
+Timotheus,male,mature,free,Athenian
+Proposer,male,mature/old,free,Athenian
+Leucon,male,mature/old,power-holder,Bosporan
+Demarch?,male,mature/old,power-holder,Athenian
+Five elected Athenians,male,mature/old,power-holder,Athenian
+First Old woman,female,old,free,Athenian
+Two chosen men,male,any adult age,free,Athenian
+Dioxippus' sister,female,mature,free,Athenian
+Lycophron,male,mature,free,Athenian
+Girl,female,adolescent,free,Athenian
+The spectators,male,adolescent/mature,free,Athenian
+Treasurers?,male,mature/old,power-holder,Athenian from deme Scambonidae
+Pharsalian representatives,male,mature/old,power-holder,Thessalian
+Crannonian representatives,male,mature/old,power-holder,Thessalian
+Scotussian representatives,male,mature/old,power-holder,Thessalian
+Larissan representatives,male,mature/old,power-holder,Thessalian
+Sogenes,male,child,free,Aeginetan
+Citizens of Scillus (acting as jurors?)?,male,mature/old,free,Scillian
+Agathon,male,adolescent/mature,free,Athenian
+Nomothetai,male,mature/old,power-holder,Athenian
+Socrates' accusers,male,mature,free,Athenian
+Accused man,male,any adult age,free,Gortynian
+Onetor,male,mature,free,Athenian
+Representatives of [cities?] from Thrace?,male,mature/old,power-holder,various Thracian poleis
+Representatives of other Greek states,male,mature/old,power-holder,various poleis and ethne
+Niceratus,male,adolescent,free,Athenian
+Thracian kings,male,any adult age,power-holder,Thracian
+Solon,male,mature/old,power-holder,Athenian
+Majoritarian,male,mature/old,free,Greek
+Cleobule,female,mature,free,Athenian
+Tomyris,female,mature,power-holder,Massagetaean
+Phalaecus,male,mature,power-holder,Phocian
+Charidemus,male,mature,power-holder,Oreitan
+100 men,male,mature/old,free,Locrian Naupactan
+Opuntians,male,mature/old,free,Locrian
+A god,n/a,n/a,unknown,n/a
+The pledgee of land,male,any adult age,free,Gortynian
+Chaerephon,male,old,free,Athenian
+Sitalces,male,mature,power-holder,Thracian
+Sadocus (Sitalces' son),male,adolescent,free,Athenian
+Autolycus,male,adolescent,free,Athenian
+Demosthenes' representative,male,mature/old,free,Athenian
+Hegesandrus,male,mature,free,Athenian
+Dissident,male,mature,free,Athenian
+Chalcideus,male,mature/old,power-holder,Spartan
+Cresphontes,male,mature,power-holder,Messenian
+Messenians,male,any adult age,free,Messenian
+Sosias,male,mature,chattel-slave,n/a
+Ruler of Laconia,male,mature,power-holder,Spartan
+Teleutias,male,mature,power-holder,Spartan
+The men in the fleet,male,any adult age,free,various
+First Boy,male,child,free,Athenian
+Armenians,male,any adult age,free,Armenian
+Chaldaeans,male,any adult age,free,Chaldaean
+Pistias,male,mature,free,Athenian
+Representatives of the allies of both parties,male,mature/old,power-holder,various
+Old man?,male,old,free,Greek
+Theophemus,male,mature,free,Athenian
+Theopompus,male,mature,free,Athenian
+Witnesses in Socrates' trial,male,any adult age,free,Athenian
+Jury who voted for the death penalty,male,mature/old,free,Athenian
+The Thirty and their followers,male,mature/old,free,Athenian
+Hipparchs,male,mature,power-holder,Athenian
+Taxiarchs,male,mature,power-holder,Athenian
+Phylarchs,male,mature,power-holder,Athenian
+Rheomithres,male,mature,power-holder,Persian
+Greeks in Scythia,male,any adult age,free,unknown
+Herodotus,male,any adult age,free,Halicarnassian Became Thurian
+Rulers,male,mature/old,power-holder,Milesian
+Spudias,male,mature,free,Athenian
+Assyrian King,male,adolescent,power-holder,Assyrian
+Timenor,male,mature/old,free,Leontine
+Sosis,male,mature/old,free,Leontine
+Gelon,male,mature/old,free,Leontine
+Circe,female,mature,power-holder,n/a
+Peloponnesians,male,any adult age,free,various
+Opponent,male,mature,free,Athenian
+Carthaginians,male,any adult age,free,Carthaginian
+Panthea,female,mature,power-holder,Susanian
+Abradatas,male,mature,power-holder,Susanian
+Men chosen to draw up register of 5000,male,mature/old,free,Athenian
+Hound,male,n/a,n/a,n/a
+Mnemon,male,mature,power-holder,Gortynian
+Man,male,mature,free,Median
+Demosthenes?,male,mature,free,Athenian
+Members of the group,male,any adult age,free,Athenian
+Aristodemus,male,mature,free,Athenian
+Lysander,male,mature,power-holder,Spartan
+Representatives of the Athenian garrison,male,mature/old,power-holder,Athenian
+Thessalians,male,any adult age,free,Thessalian
+Boeotians,male,any adult age,free,Boeotian
+Dorians,male,any adult age,free,various
+Perrhaebians,male,any adult age,free,Perrhaebian
+Magnesians,male,any adult age,free,Magnesian
+Dolopians,male,any adult age,free,Dolopian
+Locrians,male,any adult age,free,Locrian
+Oetaeans,male,any adult age,free,Oetaean
+Phthians,male,any adult age,free,Phthian
+Malians,male,any adult age,free,Malian
+Phocians,male,any adult age,free,Phocian
+Athenodorus,male,mature,power-holder,Athenian
+Cyclops?,male,mature,free,n/a
+Maid,female,mature,chattel-slave,Athenian
+Cratylus,male,mature,free,Athenian
+"Hannibal, son of Gisgo",male,mature,power-holder,Carthaginian
+"Himilco, son of Hanno",male,mature,power-holder,Carthaginian
+Myrtia,female,old,free,Athenian
+Androcles,male,mature,free,Athenian
+Meton,male,mature,free,n/a
+Spartan magistrates (ta telh),male,mature,power-holder,Spartan
+Ajax,male,mature,power-holder,Athenian
+Phrastor,male,mature/old,free,Athenian
+Others as ordered by the Chalcidians,male,mature/old,free,Macedonian
+Themistocles,male,old,free,Athenian
+Persians,male,any adult age,free,Persian
+Cleander,male,mature,power-holder,Spartan
+Cithaeron,n/a,n/a,n/a,n/a
+The parties in dispute,male,mature,free,Athenian
+Chrysantas,male,mature,free,Persian
+Herald,male,mature,free,Spartan
+Erinyes,female,old,n/a,n/a
+Athenian people,n/a,n/a,n/a,Athenian
+Prosecutor/Defendant,male,any adult age,free,Athenian
+Ariston's wife/Demaratus' mother,female,mature,power-holder,Spartan
+The twelve arbitrators,male,mature/old,free,Mytilenean
+The winner of the case,male,any adult age,free,Athenian
+Generals (except Alcibiades),male,mature/old,power-holder,Athenian
+Dercetes,male,mature,free,Athenian
+Aeschines' brother,male,mature,free,Athenian
+Seventeen citizens from the polis,male,mature,free,unknown
+Oath-commissioner,male,mature/old,power-holder,Athenian
+Thrasymachus,male,mature,free,Athenian
+The poet,male,adolescent,free,Greek
+Colonists in Naupactus,male,adolescent/mature,free,Locrian Naupactian
+Representatives of the Locrians of Oeniadae,male,mature/old,power-holder,Locrian
+Ctesippus,male,adolescent,free,Athenian
+Dionysodorus,male,mature,free,Chian
+The person who received the slave as a pledge,male,mature,free,Gortynian
+Genos members,male,any adult age,free,Athenian
+Athenian herald,male,mature,power-holder,Athenian
+President/Umpire,male,mature/old,free,n/a
+Calchas,male,old,free,Greek
+Prosecutor(s),male,any adult age,free,Athenian
+Representatives of various Greek poleis,male,any adult age,free,various
+Inarus,male,mature,power-holder,Libyan
+Andromache,female,mature,chattel-slave,n/a
+Righteous/Good man,male,any adult age,free,n/a
+Euthyphro,male,mature,free,Athenian
+Wife,female,mature,free,Athenian
+Those involved in the dispute,male,mature/old,free,Athenian
+Thucritus,male,mature,free,Athenian
+Brasidas,male,mature,power-holder,Spartan
+Men,male,any adult age,free,Spartan
+Hippothales,male,adolescent,free,Athenian
+Pisatans,male,mature/old,free,Pisatan
+Eubulus,male,mature,free,Athenian
+Representatives of the Persian King,male,mature,power-holder,Persian
+Sicon,male,unknown,unknown,unknown
+Agelaus the archon,male,mature,power-holder,Thessalian
+Hieromnemones,male,mature/old,free,Thessalian
+Other officials who hold office,male,mature/old,power-holder,Thessalian
+Third Old Woman,female,old,free,Athenian
+Young men coming of age,male,adolescent,free,Teian
+Chrysothemis,female,adolescent,free,Argive
+Electra,female,mature,free,Argive
+Callimachus,male,mature,free,Athenian
+Inspector,male,mature,power-holder,Athenian
+[---]cles of Erchia,male,mature,power-holder,Athenian
+Demochares of Paeania,male,mature,power-holder,Athenian
+Other unknown representatives of Athens,male,mature/old,power-holder,Athenian
+Envoys from Amyntas,male,mature/old,power-holder,Macedonian
+Relatives,male,any adult age,free,Gortynian
+Oikistai on Colophon,male,mature,free,Colophonian
+Second Creditor,male,adolescent,free,Athenian
+Gadatas,male,mature,power-holder,unknown
+Charon,male,old,n/a,n/a
+Poseidon,male,mature,power-holder,n/a
+73 deme members,male,any adult age,free,Athenian
+Euboulides the demarch,male,mature,power-holder,Athenian
+Boy,male,child,free,Athenian
+Korianno?,female,mature,free,n/a
+Envoys of the allies of Athens,male,mature/old,power-holder,various
+The so-called 'Five',male,mature/old,power-holder,Athenian
+Theoclymenus,male,mature,free,Ithacan
+Penelope,female,mature,power-holder,Ithacan
+The serf who captured the defendant,male,any adult age,semi-servile,n/a
+The serf's master,male,any adult age,free,Gortynian
+One other witness,male,any adult age,free,Gortynian
+Lover,male,mature,free,n/a
+Beloved,male,adolescent,free,n/a
+Phratriarch?,male,mature/old,power-holder,Athenian
+Catanian recruits,male,any adult age,free,Catanaean
+Euryptolemus,male,mature/old,free,Athenian
+Accused tagos,male,mature,power-holder,Delphian
+Otys,male,mature,power-holder,Paphlagonian
+"Diopeithes, son of Phasyrcides, of Sunium",male,any adult age,free,Athenian
+"Philoneos, son of Ameinonicus, of Sunium",male,any adult age,free,Athenian
+"Chalcideus, son of Andromenes, of Sunium",male,any adult age,free,Athenian
+"Chariades, son of Charicles, of Sunium",male,any adult age,free,Athenian
+"Theophanes, son of Zophanes, of Sunium",male,any adult age,free,Athenian
+"Hegias, son of Hegesias, of Sunium",male,any adult age,free,Athenian
+"Ameinias, son of Philinos, of Sunium",male,any adult age,free,Athenian
+Sycophant,male,any adult age,free,unknown
+Aristeides,male,n/a,n/a,n/a
+All women present,female,mature,free,Athenian
+Iphigenia,female,mature,power-holder,Argive
+Pylades,male,adolescent,free,Phocian
+Wife of Ischomachus,female,mature,free,Athenian
+All Athenians,male,any adult age,free,Athenian
+Tagos,male,mature/old,power-holder,Delphian
+Outgoing tagoi,male,mature/old,power-holder,Delphian
+"Thrasycles, son of Thrason, of Boutadae",male,any adult age,free,Athenian
+"Stratophon, son of Straton, of Agryle",male,any adult age,free,Athenian
+"Melittius, son of Execestides, of Boutadae",male,any adult age,free,Athenian
+"Aristarchus, son of Democles, of Boutadae",male,any adult age,free,Athenian
+"Arceon, son of Eumelides, of Acharnae",male,any adult age,free,Athenian
+"Chaerestratus, son of Pancleides, of Epicephisia",male,any adult age,free,Athenian
+"Demon, son of Demaretus, of Agryle",male,any adult age,free,Athenian
+Stasikypros,male,any adult age,power-holder,Idalean
+Officials of the city,male,mature/old,power-holder,Idalean
+Onasilos,male,mature/old,free,unknown
+Onasilos' brothers,male,any adult age,free,unknown
+Those (men) who have attained puberty,male,any adult age,free,Chalcidian
+Oath-commissioners?,male,mature/old,power-holder,Athenian
+Acoris,male,adolescent/mature,power-holder,Egyptian
+Servant,male,mature,chattel-slave,n/a
+Pancleon,male,mature,chattel-slave,n/a
+Synegoroi,male,mature/old,free,Athenian
+Phratriarch,male,mature/old,power-holder,Athenian
+Priest of the phratry,male,mature/old,free,Athenian
+Agamemnon,male,mature,power-holder,Mycenaean
+Proteas,male,mature,power-holder,Athenian
+Carcinus,male,mature,power-holder,Athenian
+The apetairos who captured the defendant,male,any adult age,free,n/a
+Two others,male,any adult age,free,unknown
+Suitors,male,adolescent/mature,free,various Greek
+Thucritides,male,old,free,Athenian
+Charisiades,male,old,free,Athenian
+Niciades,male,old,free,Athenian
+Heralds of King Artaxerxes II,male,mature,power-holder,Persian
+Arms-Dealer,male,mature,free,Athenian
+Phliasians,male,any adult age,free,Phliasian
+"Amyntas, son of Arrhidaeus",male,mature,power-holder,Macedonian
+"Alexander, son of Amyntas",male,adolescent,power-holder,Macedonian
+Cnemus,male,mature,power-holder,Spartan
+Odysseus' men,male,mature,free,Ithacan
+Gorgias,male,old,free,Leontine
+Antiphanes,male,mature,free,Athenian
+Prometheus,male,mature,free,n/a
+Second Old Woman,female,old,free,Athenian
+Pluto,male,mature,power-holder,n/a
+Socrates' accuser,male,mature,free,Athenian
+The pledger of land,male,any adult age,free,Gortynian
+Acroreans,male,mature/old,free,Acrorean
+The person lodging the objection,male,mature/old,free,Athenian
+Pausanias,male,mature,power-holder,Spartan
+Greeks,male,any adult age,free,Greek
+Artaxerxes II,male,mature,power-holder,Persian
+The speaker and his party,male,mature/old,free,Athenian
+Menecles' brother and his party,male,mature/old,free,Athenian
+Cephalus of Collytus,male,mature,power-holder,Athenian
+[-----] of Alopece,male,mature/old,power-holder,Athenian
+Aesimus,male,mature,power-holder,Athenian
+[-----] of Phrearrhi,male,mature/old,power-holder,Athenian
+Democlides,male,mature,power-holder,Athenian
+Sappho,female,mature,free,Lesbian
+Archer,male,adolescent/mature,chattel-slave,Scythian
+Vile man,male,any adult age,free,n/a
+Alyattes,male,mature,power-holder,Lydian
+Paches,male,mature,power-holder,Athenian
+Artarios,male,adolescent,power-holder,Persian
+Amytis,female,mature,power-holder,Persian
+Artoxares,male,adolescent,power-holder,Persian
+Petesas,male,mature,power-holder,Persian
+Sisters of sacrificed daughter of Erectheus,female,adolescent,free,Athenian
+Sacrificed daughter of Erectheus,female,adolescent,free,Athenian
+Strategos #1,male,mature/old,power-holder,Eretrian
+Alcias of Chytroi (strategos #2),male,mature/old,power-holder,Eretrian
+Hipposthenes of Minthous (strategos 3#),male,mature/old,power-holder,Eretrian
+Xenotimus (strategos #4),male,mature/old,power-holder,Eretrian
+Clearchus (strategos #5),male,mature/old,power-holder,Eretrian
+Phileas of Zarex (strategos #6),male,mature/old,power-holder,Eretrian
+A[---] the hipparch,male,mature,power-holder,Eretrian
+Eparagon of Amarynthus (taxiarch #1),male,mature,power-holder,Eretrian
+Demarchus of Hermae (taxiarch #2),male,mature,power-holder,Eretrian
+Epasippus (taxiarch #3),male,mature,power-holder,Eretrian
+Democrates (taxiarch #4),male,mature,power-holder,Eretrian
+S[---] of Styra (taxiarch #5),male,mature,power-holder,Eretrian
+Five Athenians,male,mature/old,free,Athenian
+Maendrius,male,mature,power-holder,Samian
+Otanes,male,mature,power-holder,Persian
+Leader of second Semichorus,n/a,old,free,Athenian
+Leader of first Semichorus,n/a,old,free,Athenian
+"the ""oligarchs""",male,any adult age,free,Corcyraean
+"the ""demos""",male,any adult age,free,Corcyraean
+Amphictyones,male,mature/old,free,various
+Judge,male,mature/old,free,n/a
+Theorus,male,mature,free,Athenian
+Second Athenian,male,mature,free,Athenian
+Magistrates (ta tele),male,mature/old,power-holder,Spartan
+Syracusan boy,male,adolescent,free,Syracusan
+Market place,female,n/a,unknown,n/a
+Those possessing flocks,male,any adult age,free,Iot
+Hieopoioi,male,mature/old,free,Iot
+Ninus,male,mature,power-holder,Assyrian
+Diotimus,male,mature/old,power-holder,Athenian
+Incoming archons,male,adolescent/mature,power-holder,Athenian
+Mandane,female,mature,power-holder,Median
+Rhea,female,mature,power-holder,n/a
+Athenian land and people,n/a,n/a,n/a,n/a
+Citizen of the ideal state,male,any adult age,free,n/a
+Cleisthenes,male,mature,free,Athenian
+Haemon,male,adolescent,free,Theban
+Aglaitadas,male,mature,free,Persian
+Epaminondas,male,mature,power-holder,Theban
+Choral judges,male,mature/old,free,Athenian
+The Venerable Priestesses,female,old,free,Athenian
+Wife of the archon basileus,female,mature/old,free,Athenian
+Women at Thesmophoria,female,mature/old,free,Athenian
+A man,male,mature,free,unknown
+Mistress?,female,mature,free,unknown
+Timarchus,male,mature,free,Athenian
+Healer,male,mature,free,Thracian
+Dionysius,male,any adult age,power-holder,Syracusan
+[----] of the Syracusans,male,mature/old,power-holder,Syracusan
+[---]archs,male,mature/old,power-holder,Syracusan
+Aesop,male,mature,chattel-slave,n/a
+Guard,male,mature,free,Theban
+Persian satrap,male,mature/old,power-holder,Persian
+Advocates (synegoroi),male,any adult age,free,Eresian
+Alciphron,male,mature/old,free,Argive
+Epidaurians,male,any adult age,free,Epidaurian
+Maritime allies,male,any adult age,free,various Greek
+Clinias' relatives,male,any adult age,free,Athenian
+Euagoras,male,mature,power-holder,Salaminian
+Philoetius,male,mature,chattel-slave,n/a
+Therimenes,male,mature/old,power-holder,Spartan
+Citizens of the poleis on Ceos,male,mature/old,free,Cean
+Registrars of naval expedition,male,mature,free,Corinthian
+Respondent,male,any adult age,free,Athenian
+Actress as Ariadne,female,adolescent,n/a,n/a
+Advocate (synegoros),male,mature/old,free,Athenian
+The father of the speaker,male,mature,free,Athenian
+Other phratry members,male,any adult age,free,Athenian
+The Boule,male,mature/old,free,Delphian
+Gyes,male,mature,power-holder,Paphlagonian
+Themison,male,mature,free,Theran
+Etearchus,male,mature,power-holder,Oaxian
+Captive Carian women,female,any adult age,free,n/a
+The thirty suggrapheis,male,mature/old,free,Athenian
+Trierarchs,male,mature/old,power-holder,Athenian
+Hoplites,male,adolescent/mature,free,Athenian
+Any other Athenians present,male,any adult age,free,Athenian
+Those making counter-claims to the estate,male,mature/old,free,Athenian
+Three envoys,male,mature/old,power-holder,Cean
+Aristophon of Azenia,male,mature,free,Athenian
+Philocles,male,mature,power-holder,Athenian
+Representatives of the other allies,male,mature/old,power-holder,various
+Phaedra,female,mature,power-holder,Athenian
+Athenian and various poleis,male,mature/old,power-holder,Athenian
+Spartan and various poleis,male,any adult age,power-holder,Spartan
+Aetolians,male,any adult age,free,Aetolian
+Epeians,male,any adult age,free,Epeian
+Messengers (angeloi) from Hermias,male,mature,free,Atarnean
+Cydon,male,mature/old,power-holder,Byzantine
+Menestratus,male,mature/old,power-holder,Byzantine
+Hegemon,male,mature/old,power-holder,Byzantine
+Hestiaeus,male,mature/old,power-holder,Byzantine
+Philinus,male,mature/old,power-holder,Byzantine
+Gnathius,male,mature,free,Athenian?
+A boy,male,adolescent,free,Athenian?
+Boys,male,child,free,Median
+Five men chosen from the pilgrims,male,mature,free,Andrian
+The boule of those sailing from Andros to Delphi,male,mature/old,free,Andrian
+Mitrobates,male,mature/old,power-holder,Persian
+Arnapes,male,mature/old,power-holder,Persian
+Leotychides,male,mature,free,Spartan
+Speaking dog,male,n/a,n/a,n/a
+Speaking sheep,female,n/a,n/a,n/a
+The other Athenians,male,mature/old,power-holder,Athenian
+Pheidon,male,mature,power-holder,Thesprotian
+The citizen who captured the defendant,male,any adult age,free,Gortynian
+Four others,male,any adult age,free,Gortynian
+Menexenus (III),male,mature,free,Athenian
+The cousins of Menexenus,male,mature,free,Athenian
+Dicaeogenes,male,mature,free,Athenian
+Timocreon,male,mature,free,Rhodian
+Representatives of Philip's allies,male,mature/old,power-holder,various
+Critias,male,adolescent/mature,free,Athenian
+Representative of Meidias,male,any adult age,free,Athenian
+Straton of Phalerum,male,mature/old,free,Athenian
+Atossa,female,mature,power-holder,Persian
+Democedes,male,mature,chattel-slave,Formerly of Croton
+Karpologoi,male,old,power-holder,Thasian
+Alcetas,male,mature/old,power-holder,Epirot
+Ariobarzanes,male,mature,power-holder,Persian
+The Great King's representatives,male,mature/old,power-holder,Persian
+Trojan,male,unknown,unknown,Trojan
+Third woman,female,mature,free,Athenian
+Pasion,male,old,free,Athenian
+Lysitheides,male,mature,free,Athenian
+Diocles,male,mature/old,free,Athenian
+Ceans reinstated by the Athenians,male,any adult age,free,Cean
+Troops,male,any adult age,free,Persian
+Agelaus,male,mature,free,Achaean
+Labes the dog,male,n/a,n/a,n/a
+The Greeks who fought at Plataea,male,any adult age,free,various
+Labynetus,male,mature,power-holder,Babylonian
+Polystratus,male,old,power-holder,Athenian
+Polycrates,male,mature/old,power-holder,Samian
+Temple-warden,male,mature,free,Parian
+Satyrs,male,adolescent,free,n/a
+Herippidas,male,mature/old,power-holder,Spartan
+Megillus,male,mature/old,power-holder,Spartan
+Demodocus,male,old,free,Athenian
+Reckoner (logistes),male,mature/old,free,Athenian
+Actor playing Dionysus,male,adolescent,free,Athenian
+Glaucus,male,mature,free,Athenian
+Eupolemus,male,mature,free,Athenian
+Arcephron of Lamptrae (bouleutes 1),male,mature/old,free,Athenian
+[---] of Thria (bouleutes 2),male,mature/old,free,Athenian
+[---] of Hagnous (bouleutes 3),male,mature/old,free,Athenian
+Bouleutes #4,male,mature/old,free,Athenian
+Bouleutes #5,male,mature/old,free,Athenian
+Idiotes #1,male,mature/old,free,Athenian
+Hippocrates of Cerameis (idiotes 2),male,mature/old,free,Athenian
+Idiotes #3,male,mature/old,free,Athenian
+Chaerephon of Cedoe (idiotes 4),male,mature/old,free,Athenian
+Emmenides of Coele (idiotes 5),male,mature/old,free,Athenian
+[---] of Sunium (idiotes 6),male,mature/old,free,Athenian
+Aristides of Oe (idiotes 7),male,mature/old,free,Athenian
+Idiotes #8,male,mature/old,free,Athenian
+Glaucon of Perithoedae (idiotes 9),male,mature/old,free,Athenian
+Phaedrus (idiotes 10),male,mature/old,free,Athenian
+Representatives of the Chalicidians from Thrace,male,mature/old,power-holder,Chalcidian
+Litigants,male,any adult age,free,Athenian
+Witness,male,any adult age,free,Athenian
+Leontines,male,mature/old,free,Leontine
+Archidamus III,male,mature,power-holder,Spartan
+Parrhasius,male,old,free,Athenian
+New members of the Piraeus party,male,any adult age,free,Athenian
+Other members of the Piraeus party,male,any adult age,free,Athenian
+"Amyntas, son of Arrhidaeus?",male,mature,power-holder,Macedonian
+Xanthians,male,mature,free,Xanthian
+Perioikoi,male,mature,free,n/a
+Mausolus,male,mature,power-holder,n/a
+Hipponicus,male,unknown,unknown,unknown
+Representatives of both parties,male,mature/old,power-holder,Elean
+Messenian rebels,male,any adult age,semi-servile,n/a
+Base people,male,any adult age,n/a,n/a
+Citizens judging,male,mature/old,free,Eresian
+An unknown Athenian,male,unknown,unknown,unknown
+Phoenician sailors,male,adolescent/mature,free,Phoenician
+Phoenician woman,female,mature,chattel-slave,n/a
+Representatives of Seuthes' enemies,male,mature/old,power-holder,Thracian
+Symposiast,male,unknown,unknown,unknown
+Ate,female,adolescent,power-holder,n/a
+Peison,male,mature/old,power-holder,Athenian
+Lysias,male,mature,free,Syracusan
+Conon,male,adolescent,free,Athenian
+Bacchius,male,adolescent,free,Athenian
+certain others,male,adolescent,unknown,unknown
+Lyssa,female,mature,power-holder,n/a
+Representatives of various poleis allied to Athens,male,mature/old,power-holder,various
+Aristomenes,male,mature,power-holder,Messenian
+All the Achaeans,male,mature,free,Achaean
+Diogeiton's daughter,female,mature,free,Athenian
+Sicyonians,male,mature/old,free,Sicyonian
+Disputant,male,any adult age,free,Cretan
+Women's leader,n/a,old,free,Athenian
+Synedroi on the ships,male,mature/old,power-holder,various
+Archeneos,male,mature,free,Athenian
+Dracontides,male,mature,free,Athenian
+Phanus,male,mature,free,Athenian
+The defendant's son,male,adolescent/mature,free,Athenian
+Barcaeans,male,any adult age,free,Barcaean
+Oligarchs,male,mature/old,power-holder,Greek
+Bryon,male,mature/old,power-holder,Chian
+Apelles,male,mature/old,power-holder,Chian
+Theocritus,male,mature/old,power-holder,Chian
+Archelaus,male,mature/old,power-holder,Chian
+Nasamones,male,any adult age,free,Nasamonian
+Memnon,male,adolescent,power-holder,Persian
+Mentor,male,adolescent,power-holder,Persian
+Second Soldier (Chorus),n/a,adolescent/mature,free,Trojan
+Leader (Chorus),n/a,adolescent/mature,free,Trojan
+Third Soldier,male,adolescent/mature,free,Trojan
+Driver of Rhesus' Chariot,male,adolescent/mature,free,Thracian
+Unknown,male,any adult age,free,Athenian
+Menedaeus,male,mature/old,power-holder,Spartan
+"Alcetas, son of Alexander (Perdiccas's brother)",male,mature,power-holder,Macedonian
+"Archelaus, son of Perdiccas",male,adolescent,power-holder,Macedonian
+"Alexander, son of Alcetas",male,adolescent/mature,power-holder,Macedonian
+"Aeropus, son of Philip",male,any adult age,power-holder,Macedonian
+"Menelaus, son of Alexander",male,any adult age,power-holder,Macedonian
+"Agelaus, son of Alcetas",male,any adult age,power-holder,Macedonian
+"Byrginus, son of Craston",male,any adult age,power-holder,Macedonian
+"Agerrus, son of Philip",male,any adult age,power-holder,Macedonian
+"Alexander, son of Pantapon",male,any adult age,power-holder,Macedonian
+Eurylochus,male,any adult age,power-holder,Macedonian
+Eulander,male,any adult age,power-holder,Macedonian
+Antigenes,male,any adult age,power-holder,Macedonian
+Adimus,male,any adult age,power-holder,Macedonian
+Lycaeus,male,any adult age,power-holder,Macedonian
+Nomenius,male,any adult age,power-holder,Macedonian
+Craston,male,any adult age,power-holder,Macedonian
+Stadmeas,male,any adult age,power-holder,Macedonian
+Nicander,male,any adult age,power-holder,Macedonian
+Gaeteas,male,any adult age,power-holder,Macedonian
+Corratas,male,any adult age,power-holder,Macedonian
+Meleager,male,any adult age,power-holder,Macedonian
+Dirbeas,male,any adult age,power-holder,Macedonian
+Arrhabaeus,male,any adult age,power-holder,Macedonian
+Limnaeus,male,any adult age,power-holder,Macedonian
+Autannius,male,any adult age,power-holder,Macedonian
+Antiochus,male,any adult age,power-holder,Macedonian of Orestis
+Scythians,male,any adult age,free,Scythian
+Voter,male,mature/old,free,n/a
+Representatives of the other state,male,mature/old,power-holder,unknown
+Fire,n/a,n/a,n/a,n/a
+Sea,n/a,n/a,n/a,n/a
+The returning exiles,male,any adult age,free,Megarian
+The rest of the Megarians,male,any adult age,free,Megarian
+Idaeus,male,mature,free,Trojan
+Jurors (horkomotai),male,mature,free,Chalian
+Perdiccas' representatives,male,mature/old,power-holder,Macedonian
+Bouleutai?,male,mature/old,free,Histiaean
+Hurlyburly,male,mature,chattel-slave,n/a
+War,male,mature,power-holder,n/a
+Knights,male,mature,free,Athenian
+Amasis the Persian general,male,mature,power-holder,Persian
+Politician,male,mature/old,free,Athenian
+King of Bactria,male,mature,power-holder,Bactrian
+Peltasts,male,adolescent/mature,free,Arcadian
+All other Arcadian soldiers?,male,adolescent/mature,free,Arcadian
+Campanians,male,any adult age,free,Siceliot
+Echecrates,male,mature,free,Phliasian
+Phaedo,male,mature,free,Elean
+Diomedes,male,mature,power-holder,Argive
+Those counting votes,male,mature/old,free,Greek
+Those present,male,adolescent/mature,free,Athenian
+Some people,male,any adult age,free,Athenian
+Archidamus,male,mature,power-holder,Spartan
+Lessees,male,any adult age,free,Athenian
+Isodemus,male,mature/old,free,Leucadian
+Olympiadas,male,mature/old,free,Leucadian
+Leontiades,male,mature,power-holder,Theban
+Supporters of Leontiades,male,mature,power-holder,Theban
+Phrourarch,male,mature,power-holder,Athenian
+A woman,female,mature,free,Sybarite
+Jar,male,n/a,n/a,n/a
+Heracleides,male,mature,power-holder,Maronite
+Aeschines' nephew,male,adolescent/mature,free,Athenian
+Aeschines' physician,male,any adult age,free,unknown
+Miltiades,male,n/a,n/a,n/a
+Those making offerings,male,mature/old,free,Prienian
+Hieropoioi?,male,mature/old,free,Prienian
+Athlothetai,male,mature/old,free,Athenian
+Thracians,male,any adult age,free,Thracian
+Laomedon,male,adolescent/mature,power-holder,Trojan
+Aristanor,male,mature/old,power-holder,Euaemnian
+Onomantus,male,mature/old,power-holder,Euaemnian
+Laeas,male,mature/old,power-holder,Euaemnian
+Saocles,male,mature/old,power-holder,Euaemnian
+Deinias,male,mature,free,Athenian
+Hyrcanian king,male,mature,power-holder,Hyrcanian
+Supporters of Euboulides,male,any adult age,free,Athenian
+Public officials,male,mature/old,power-holder,Chalcidian
+Envoys from King Philip II,male,mature/old,power-holder,Macedonian
+Dolon,male,mature,free,Trojan
+Eurymedon,male,mature,power-holder,Athenian
+Archon?,male,mature/old,power-holder,Thessalian
+Pezarchoi,male,mature,power-holder,Thessalian
+Polycrite,female,adolescent/mature,free,Naxian
+Diognetus,male,mature,power-holder,Erythraean
+Inspectors (aneuretai),male,mature,free,Zeleian
+All other Archai,male,mature/old,power-holder,Athenian
+Calypso,female,mature,power-holder,n/a
+Unwedded spectators,male,adolescent/mature,free,Athenian
+Menecles,male,mature,free,Athenian
+Demus,male,mature,power-holder,Athenian
+Empedocles,male,adolescent,free,Theran
+Prexaspes,male,mature,free,Persian
+The Magi,male,mature/old,power-holder,Persian
+Danae,female,adolescent,free,Argive
+Diomedon,male,mature/old,power-holder,Athenian
+Samian rebels,male,any adult age,free,Samian
+The most influential Samians,male,mature/old,free,Samian
+Pissuthnes,male,mature,power-holder,Persian
+Suitors' families,male,mature/old,free,Achaean
+Members of the koine of Eikadeus,male,mature/old,free,Athenian?
+Second woman,female,mature,free,Athenian
+Glyce,female,mature,free,Athenian
+Charicles,male,mature,free,Athenian
+"Agetus, son of Alcidas",male,mature,free,Spartan
+Corcyraean oligarchs,male,mature/old,free,Corcyraean
+Teucer,male,mature,free,Salaminian
+Critobulus of Lampsacus,male,mature,power-holder,Lampsacene
+One of the comrades,male,mature,free,unknown
+Accuser,female,adolescent/mature,chattel-slave,n/a
+Chorus of citizens,n/a,adolescent/mature,free,Pherean
+King of Macedon,male,mature/old,power-holder,Macedonian
+King of Lyncestis,male,mature/old,power-holder,Lyncestian
+King of Elimea,male,mature/old,power-holder,Elimean
+Kings of other tribes,male,mature/old,power-holder,various tribes
+Agasias,male,mature,power-holder,Stymphalian
+Callicles' mother,female,mature/old,free,Athenian
+Eutherus,male,mature,free,Athenian
+Messenger,male,mature,free,Nephelokokkugian
+Greek hoplites,male,any adult age,free,various
+Asclepiad,male,mature,free,Coan
+Stabrobates,male,mature,power-holder,Indian
+Semiramis,female,mature,power-holder,Assyrian
+The people of Athens,male,any adult age,free,Athenian
+Cersobleptes' representatives,male,mature/old,power-holder,Thracian
+A person in love,n/a,unknown,unknown,unknown
+Neopoiai,male,mature/old,power-holder,Halicarnassian
+Pandarus,male,mature,free,Zeleian
+Aeneas,male,mature,power-holder,Trojan
+Xanthos (Scamander),male,mature,power-holder,n/a
+Opponents of Callistratus,male,any adult age,free,Athenian
+Pythodorus (the archon),male,mature/old,power-holder,Athenian
+Ariston's witnesses,male,any adult age,free,Athenian
+Dion,male,mature,free,Siceliot
+Plato,male,old,free,Athenian
+Theocrines,male,mature,free,Athenian
+The father of the young man,male,mature,free,Tenian
+Students,male,mature/old,free,Greek
+Prospective teachers,male,mature/old,free,Greek
+Representatives of the Thracian kings,male,mature/old,power-holder,Thracian
+Some of the Corinthian powerholders,male,mature/old,power-holder,Corinthian
+Some Corinthians opposed to the regime,male,any adult age,free,Corinthian
+Menon,male,mature,power-holder,Thessalian
+Representatives of the existing allies of Athens,male,mature/old,power-holder,various
+Croesus' envoys,male,mature/old,power-holder,Lydian
+Poor men,male,any adult age,free,Athenian
+Echo,female,old,power-holder,n/a
+Pledgee,male,mature,free,Gortynian
+Darius II,male,mature,power-holder,Persian
+Secyndianus,male,mature,power-holder,Persian
+Ino,female,mature,power-holder,Boeotian
+Athamas,male,mature,power-holder,Boeotian
+Notharchus,male,mature,free,Athenian
+Representatives of the newly allied state,male,mature/old,power-holder,unknown
+Aegisthus,male,mature,power-holder,Argive
+Men with property of more than 30 staters,male,mature/old,free,Erythraean
+Synedroi of allies,male,mature/old,power-holder,various
+Imaginary state,n/a,any adult age,free,n/a
+Nicarchus,male,mature,free,Athenian
+Representatives of the allies of King Philip,male,mature/old,power-holder,various
+Chorus (mixed),n/a,mixed,free,n/a
+Another man,male,mature,free,Athenian
+Astibaras,male,mature/old,power-holder,Median
+Zarina,female,mature,power-holder,Sacian
+Most of the trierarchs,male,mature/old,power-holder,Syracusan
+Hipparch,male,mature,free,Athenian
+Leto,female,mature,power-holder,n/a
+Delos,n/a,n/a,n/a,n/a
+The uncle of the young man,male,mature/old,free,Tenian
+Neon,male,mature/old,power-holder,Halian
+[----]os,male,mature/old,power-holder,Halian
+Agac[---],male,mature/old,power-holder,Halian
+Sambaulas,male,mature,free,Persian
+The soldier,male,adolescent/mature,free,unknown
+The husbands of the sisters of Dicaeogenes (II),male,mature,free,Athenian
+Dicaeogenes (III),male,mature,free,Athenian
+Representatives of the Sicilian allies of Syracuse,male,mature/old,power-holder,various
+Representatives of the Sicilian allies of Athens,male,mature/old,power-holder,various
+Creditors,male,any adult age,free,Athenian
+Athenian officials,male,mature/old,power-holder,Athenian
+Highest officials of the allies of Athens,male,mature/old,power-holder,various
+Highest officials of the Mantineans,male,mature/old,power-holder,Mantinean
+Highest officials of the other Greeks,male,mature/old,power-holder,various
+Student,male,any adult age,free,any
+Charminus,male,mature,power-holder,Spartan
+Representatives of an unknown state,male,mature/old,power-holder,unknown
+Apollophanes,male,mature,free,Cyzicene
+Antiphilus the demarch,male,mature,power-holder,Athenian
+Priestesses,female,mature,free,Coan
+Men up for cavalry duty,male,adolescent/mature,free,Athenian
+Prisoners of war,male,adolescent/mature,free,Babylonian
+Spartans and their allies,male,any adult age,free,various
+Foreign sailors,male,any adult age,free,n/a
+Authorities,male,mature/old,power-holder,Egyptian
+Euphiletus' mother,female,mature,free,Athenian
+Ex-husband,male,any adult age,free,Gortynian
+Unknown envoy,male,mature/old,free,Rhegian
+"Silenus, son of Phocus",male,mature/old,free,Rhegian
+Samian messengers,male,mature/old,power-holder,Samian
+Ruling Milesians,male,mature/old,power-holder,Milesian
+Philebus,male,mature,free,Athenian
+Prienians,female,any adult age,free,Prienian
+Naupactans,male,mature/old,free,Locrian
+Lycians of Xanthus,male,any adult age,free,Xanthian
+"Monunius, the brother of Cetriporis",male,mature,power-holder,Thracian
+Plaintiff?,male,mature,free,Gortynian
+Sons of age with citizen rights,male,adolescent/mature,free,Gortynian
+Grandsons of age,male,adolescent,free,Gortynian
+Brothers from the same father,male,any adult age,free,Gortynian
+Brothers from the same mother,male,any adult age,free,Gortynian
+Any free man who will testify,male,any adult age,free,Gortynian
+Parysatis,female,old,power-holder,Persian
+Taktai,male,mature/old,free,Athenian
+Alexander of Pherae,male,mature,power-holder,Thessalian
+Pelopidas,male,mature,power-holder,Theban
+Fishmonger,male,unknown,unknown,unknown
+All the Theran men living in Cyrene,male,mature,free,Theran but to become Cyrenian
+All the Theran women living in Cyrene,female,mature/old,free,Theran but to become Cyrenian
+All the Theran boys,male,child,free,Theran but to become Cyrenian
+All the Theran girls,female,child,free,Theran but to become Cyrenian
+Man suggesting new strategos,male,any adult age,free,Magnesian
+Artemisia,female,mature,power-holder,n/a
+Kosmoi,male,mature,power-holder,Eltynian
+Tarentines,male,any adult age,free,Tarentine
+Supporters of Theocrines,male,any adult age,free,Athenian
+"Dercylus, son of Autocles, of Hagnous",male,mature/old,free,Athenian
+"Aristides, son of Euphiletus, of Cephisia",male,mature/old,free,Athenian
+Envoys from Lyppeus,male,mature/old,power-holder,Paeonian
+Defendant?,male,any adult age,free,Athenian
+Menoceus,male,adolescent,free,Theban
+Sositheus,male,mature,free,Athenian
+Tithraustes,male,mature,power-holder,Persian
+Hegesippus,male,old,free,Athenian
+The ex-husband's master,male,any adult age,free,Gortynian
+Representatives of the other islanders,male,mature/old,power-holder,various
+Leotychides?,male,mature,power-holder,Spartan
+Prisoners,male,adolescent/mature,free,Babylonian
+Representatives of the Greeks except the Spartans,male,any adult age,free,various
+Defendant(s),male,mature,free,Thasian or alien
+Hermione,female,mature,free,Spartan
+Leaders of the men of Phyle,male,mature/old,power-holder,Athenian
+Leaders of their supporters from the Piraeus,male,mature/old,power-holder,Athenian
+Leaders of the men of the city,male,mature/old,free,Athenian
+Persian King,male,mature,power-holder,Persian
+Unknown official(s),male,mature/old,free,Chian
+Honorand(s),male,any adult age,free,Macedonian
+Comrades,male,any adult age,free,Persian
+Envoys from the other Boeotian poleis,male,mature/old,power-holder,Various Boeotian poleis
+Scrutineers (euthynoi),male,mature/old,free,Athenian
+Assessors (paredroi),male,mature/old,free,Athenian
+Opuntian and Epicnemidian Locrian representatives,male,mature/old,power-holder,Locrian
+Spartan polemarch,male,mature/old,power-holder,Spartan
+Demeter,female,mature,power-holder,n/a
+Metanira,female,mature,power-holder,n/a
+Judge/Arbiter,male,mature/old,free,Eretrian
+Manes,male,mature,chattel-slave,n/a
+Leocrates,male,adolescent,free,Athenian
+"Cimon, son of Stesagoras",male,mature,free,Athenian
+Peisistratus,male,old,power-holder,Athenian
+Samian people,male,any adult age,free,Samian
+Messengers (angeloi) from Hermias and his hetairoi,male,mature,free,Atarnean
+Generals?,male,mature/old,power-holder,Erythraean
+Choregus,male,mature/old,free,Athenian
+Prosecutors?,male,any adult age,free,Gortynian
+Lysimachus,male,mature,free,Athenian
+Seven conspirators,male,adolescent,free,Thessalian?
+The new member of a sworn political group,male,any adult age,free,Athenian
+The other members,male,any adult age,free,Athenian
+Man searching premises,male,any adult age,free,n/a
+Indian king,male,mature,power-holder,Indian
+Babylonian king,male,mature,power-holder,Babylonian
+Medes,male,mature,free,Median
+Procuress,female,old,free,Greek
+Clouds,female,n/a,power-holder,n/a
+Aesius,male,mature,free,Athenian
+[---] of Coile,male,mature,free,Athenian
+"Sopolis, son of Kephisodoros, of Cydanthenaeon",male,mature,free,Athenian
+[---] of Anaphlystus,male,mature,free,Athenian
+[---] of Kephisia,male,mature,free,Athenian
+Kings,male,any adult age,power-holder,Greek
+Histiaeus,male,mature,power-holder,Milesian
+Darius I,male,mature,power-holder,Persian
+Representatives of Seuthes,male,mature/old,power-holder,Thracian
+Prytanis,male,mature/old,power-holder,Athenian
+Poverty,female,old,power-holder,n/a
+Hieromnemon,male,mature/old,power-holder,Athenian
+Chorus of maenads,female,mature,free,Asiatic
+Dirce (river),female,n/a,n/a,n/a
+Owner(s),male,any adult age,free,Halicarnassian
+Adversary,male,any adult age,free,Halicarnassian
+King(s),male,any adult age,power-holder,Spartan
+Vinegar/Cheap wine,n/a,n/a,n/a,n/a
+Pasimachus,male,mature,power-holder,Spartan
+Prisoner of war,male,any adult age,semi-servile,Greek
+Enemy captor,male,any adult age,power-holder,any
+Automenes,male,mature,free,Athenian
+Etymocles,male,mature/old,free,Spartan
+One of the friends of Sphodrias,male,mature/old,free,Spartan
+Ghost,male,n/a,unknown,n/a
+Heroes,male,any adult age,free,Achaean
+Comias (chorus-member),male,old,free,Athenian
+Auditor (Euthynos),male,mature/old,power-holder,Athenian
+Demarch of the following year,male,mature/old,power-holder,Athenian
+Polydamas of Pharsalus,male,mature/old,free,Thessalian
+Cephalus,male,old,free,Athenian
+Athenian hoplites,male,adolescent/mature,free,Athenian
+The [---]atidae,male,mature/old,free,Locrian?
+Oath-officials,male,mature/old,power-holder,Locrian
+Citizens during the oligarchy,male,any adult age,free,Thasian
+Neocleides,male,mature,free,Athenian
+Athenian assembly,male,any adult age,free,Athenian
