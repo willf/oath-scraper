@@ -1,10 +1,7 @@
 import re
 import json
 from bs4 import BeautifulSoup
-import time
-from playwright.sync_api import sync_playwright
 import os
-import csv
 import sys
 
 
@@ -13,8 +10,10 @@ def err_print(*args, **kwargs):
 
 
 def handle_element_default(name, element):
-    # Implement handling of element
-    yield name, element.get_text(strip=True)
+    # convert br to p
+    for br in element.find_all("br"):
+        br.replace_with("\n")
+    yield name, element.get_text().strip()
 
 
 def handle_title(name, element):
@@ -24,30 +23,29 @@ def handle_title(name, element):
 
 def handle_h2(name, element):
     "<h2><strong>Oath ID 3885: Euripides, <em>Iphigenia Aulidensis</em>, 1006-7,</strong> (literary, Trag., 405)</h2>"
+    text = str(element)
     work_title = element.find("em").get_text(strip=True)
     if work_title:
         yield "title", work_title
-    strong_text = element.find("strong").get_text(strip=True)
-    parts = strong_text.split(":")
-    if len(parts) < 2:
-        err_print("Problem with parts (should be at least two)", strong_text, parts)
+    match = re.search(r"<h2><strong>Oath ID \d+: (.*?)<em>", text)
+    if not match:
+        err_print("Problem with match finding author", text)
     else:
-        parts2 = parts[1].split(",")
-        if len(parts2) < 2:
-            err_print("Problem with parts2 (should be at least two)", parts[1], parts2)
-        else:
-            author = parts2[0].strip()
-            reference = parts2[-2].strip()
-            yield "author", author
-            yield "reference", reference
-    all_text = element.get_text(strip=True)
-    text3 = re.search(r"\(([^)]+)\)$", all_text)
-    if not text3:
-        err_print("Problem with text3", all_text)
+        author = match.group(1).strip()
+        yield "author", author
+    match = re.search(r"</em>(.*?),</strong>", text)
+    if not match:
+        err_print("Problem with match finding reference", text)
+    else:
+        reference = match.group(1).strip()
+        yield "reference", reference
+    match = re.search(r"</strong>\s*(.*?)\s*</h2>", text)
+    if not match:
+        err_print("Problem with finding meta text", text)
         return
-    parts3 = text3.group(1).split(",")
+    parts3 = match.group(1)[1:-1].split(",")
     if len(parts3) != 3:
-        err_print("Problem with parts3 (should be three)", all_text, parts3)
+        err_print("Problem with parts3 (should be three)", parts3)
     else:
         work_type = parts3[0].strip()
         genre = parts3[1].strip()
@@ -72,19 +70,65 @@ def handle_state(name, element):
     yield from handle_element_default(name, element)
 
 
+def handle_sw_row(stype, element):
+    text = element.get_text(strip=True)
+    match = re.search(r"^(.*?)(\((?:male|female|n/a).*)", text)
+    if not match:
+        err_print(f"Problem with match finding {stype}", text)
+    else:
+        part_before = match.group(1).strip()
+        part_after = match.group(2).strip()
+        # remove parens
+        part_after = part_after[1:-1]
+        parts = part_after.split(",")
+        if len(parts) != 4:
+            err_print("Problem with parts (should be four)", parts)
+        else:
+            gender = parts[0].strip()
+            age = parts[1].strip()
+            status = parts[2].strip()
+            origin = parts[3].strip()
+            if gender == "n/a":
+                if "(female)" in part_before:
+                    gender = "female"
+                elif "(male)" in part_before:
+                    gender = "male"
+            agent = part_before
+            dict = {
+                "agent": agent,
+                "gender": gender,
+                "age": age,
+                "status": status,
+                "origin": origin,
+            }
+            yield stype, dict
+    # yield from handle_element_default(stype, element)
+
+
 def handle_swearer(name, element):
     # Implement handling of swearer
-    yield from handle_element_default(name, element)
+    l = []
+    for row in element.find_all("tr"):
+        _, b = handle_sw_row("swearer", row).__next__()
+        l.append(b)
+    yield "swearer", l
 
 
 def handle_swearee(name, element):
     # Implement handling of swearee
-    yield from handle_element_default(name, element)
+    l = []
+    for row in element.find_all("tr"):
+        _, b = handle_sw_row("swearee", row).__next__()
+        l.append(b)
+    yield "swearee", l
 
 
 def handle_proposed_by(name, element):
-    # Implement handling of proposed by
-    yield from handle_element_default(name, element)
+    l = []
+    for row in element.find_all("tr"):
+        text = row.get_text(strip=True)
+        l.append(text)
+    yield name, l
 
 
 def handle_if_taken(name, element):
@@ -133,8 +177,11 @@ def handle_linguistic(name, element):
 
 
 def handle_gods_invoked(name, element):
-    # Implement handling of gods invoked
-    yield from handle_element_default(name, element)
+    l = []
+    for row in element.find_all("tr"):
+        god = row.get_text(strip=True)
+        l.append(god)
+    yield name, l
 
 
 def handle_remarks(name, element):
@@ -145,6 +192,7 @@ def handle_remarks(name, element):
 class Scraper:
     def __init__(self):
         self.soup = None
+        self.current_file = None
         self.handlers = {
             "title": handle_title,
             "date": handle_date,
@@ -172,7 +220,16 @@ class Scraper:
     def extract_features(self):
         title = self.soup.find("title")
         if title:
-            yield from handle_title("title", title)
+            # get id from title <title> Oath 2595 results - Oaths in Archaic and Classical Greece </title> -> 2595
+            title = str(title.get_text(strip=True))
+            try:
+                oath_id = int(title.split()[1])
+            except ValueError:
+                err_print(
+                    f"Problem with oath_id in {self.current_file}; title: {title}"
+                )
+                return
+            yield "oath_id", oath_id
         h2 = self.soup.select_one("#content h2")
         if h2:
             yield from handle_h2("title", h2)
@@ -191,60 +248,60 @@ class Scraper:
         return dict(self.extract_features())
 
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36",
-}
+# headers = {
+#     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36",
+# }
 
 
-def page(number):
-    return f"https://www.nottingham.ac.uk/~brzoaths/database/oath_reference_details.php?oathID={number}&referenceTypeID=&authorIDName=&workID=0&workCategory=&workGenre=&takenStateID=0&Fictional=U&markerID=&sanctifyingCircumstances=N&oathDate=&invokedGodID=0&swearerID=0&sweareeID=0&swearerStateID=0&sweareeStateID=0&swearerStatus=&sweareeStatus=&swearerAgeClass=&sweareeAgeClass=&swearerGenderID=&sweareeGenderID=&centuryID=0&Taken=U&Fulfilled=U"
+# def page(number):
+#     return f"https://www.nottingham.ac.uk/~brzoaths/database/oath_reference_details.php?oathID={number}&referenceTypeID=&authorIDName=&workID=0&workCategory=&workGenre=&takenStateID=0&Fictional=U&markerID=&sanctifyingCircumstances=N&oathDate=&invokedGodID=0&swearerID=0&sweareeID=0&swearerStateID=0&sweareeStateID=0&swearerStatus=&sweareeStatus=&swearerAgeClass=&sweareeAgeClass=&swearerGenderID=&sweareeGenderID=&centuryID=0&Taken=U&Fulfilled=U"
 
 
-def page_is_invalid(html):
-    return (
-        "Error - unable to retrieve work" in html or "You have been timed out" in html
-    )
+# def page_is_invalid(html):
+#     return (
+#         "Error - unable to retrieve work" in html or "You have been timed out" in html
+#     )
 
 
-def get_page_content(url: str, browser):
-    page = browser.new_page()
-    page.goto(url)
-    return page.content()
+# def get_page_content(url: str, browser):
+#     page = browser.new_page()
+#     page.goto(url)
+#     return page.content()
 
 
-def extract_sw_features(text):
-    # Friend John (male, adolescent, free, Athenian)
-    # returns ("Friend John", "male", "adolescent", "free", "Athenian")
-    # Chorus (male) (n/a, mature, free, n/a)
-    # returns ("Chorus (male)", "n/a", "mature", "free", "n/a")
-    number_of_left_parens = text.count("(")
-    number_of_right_parens = text.count(")")
-    if (number_of_left_parens != number_of_right_parens) or (
-        number_of_left_parens != 1
-    ):
-        err_print(
-            "Problem with number of parens (should be one of each)",
-            number_of_left_parens,
-            number_of_right_parens,
-        )
-        return (text, "", "", "", "")
-    first_div = "(".join(text.split("(")[0:1]).strip()
-    second_div = text.split("(")[-1].strip()[0:-1]
-    second_div_parts = second_div.split(",")
-    if len(second_div_parts) != 4:
-        err_print(
-            "Problem with second_div_parts (should be four)",
-            second_div,
-            second_div_parts,
-        )
-        return (first_div, "", "", "", "")
-    return (
-        first_div,
-        second_div_parts[0].strip(),
-        second_div_parts[1].strip(),
-        second_div_parts[2].strip(),
-        second_div_parts[3].strip(),
-    )
+# def extract_sw_features(text):
+#     # Friend John (male, adolescent, free, Athenian)
+#     # returns ("Friend John", "male", "adolescent", "free", "Athenian")
+#     # Chorus (male) (n/a, mature, free, n/a)
+#     # returns ("Chorus (male)", "n/a", "mature", "free", "n/a")
+#     number_of_left_parens = text.count("(")
+#     number_of_right_parens = text.count(")")
+#     if (number_of_left_parens != number_of_right_parens) or (
+#         number_of_left_parens != 1
+#     ):
+#         err_print(
+#             "Problem with number of parens (should be one of each)",
+#             number_of_left_parens,
+#             number_of_right_parens,
+#         )
+#         return (text, "", "", "", "")
+#     first_div = "(".join(text.split("(")[0:1]).strip()
+#     second_div = text.split("(")[-1].strip()[0:-1]
+#     second_div_parts = second_div.split(",")
+#     if len(second_div_parts) != 4:
+#         err_print(
+#             "Problem with second_div_parts (should be four)",
+#             second_div,
+#             second_div_parts,
+#         )
+#         return (first_div, "", "", "", "")
+#     return (
+#         first_div,
+#         second_div_parts[0].strip(),
+#         second_div_parts[1].strip(),
+#         second_div_parts[2].strip(),
+#         second_div_parts[3].strip(),
+#     )
 
 
 def table_rows(soup):
@@ -282,155 +339,155 @@ def feature_name_from_td(td):
     return text.replace(" ", "_")
 
 
-def feature_value_from_td(td):
-    """
-    Convert to feature value from td. if td contains a table,
-    return a list of the tds from the table, otherwise return the td
-    """
-    table = td.find("table")
-    if table:
-        return table.find_all("td")
-    return td.get_text(strip=True)
+# def feature_value_from_td(td):
+#     """
+#     Convert to feature value from td. if td contains a table,
+#     return a list of the tds from the table, otherwise return the td
+#     """
+#     table = td.find("table")
+#     if table:
+#         return table.find_all("td")
+#     return td.get_text(strip=True)
 
 
-def list_all_feature_names(html):
-    soup = BeautifulSoup(html, "html.parser")
-    rows = table_rows(soup)
-    return [feature_name_from_td(td) for td, _ in filter_to_features(rows)]
+# def list_all_feature_names(html):
+#     soup = BeautifulSoup(html, "html.parser")
+#     rows = table_rows(soup)
+#     return [feature_name_from_td(td) for td, _ in filter_to_features(rows)]
 
 
-def extract_features(html):
-    soup = BeautifulSoup(html, "html.parser")
-    # get id from title <title> Oath 2595 results - Oaths in Archaic and Classical Greece </title> -> 2595
-    title = soup.find("title").get_text(strip=True)
-    oath_id = int(title.split()[1])
-    yield ("oath_id", oath_id)
-    # get h2 element inside #content from <div id="content" class="feature"><br><h2><strong>Oath ID 2: Aristophanes, <em>Clouds</em>, 82-83,</strong> (literary, Comic., )</h2><br>
-    h2 = soup.select_one("#content h2")
-    if h2:
-        strong_text = h2.find("strong").get_text(strip=True)
-        em_text = h2.find("em").get_text(strip=True)
-        all_text = h2.get_text(strip=True)
-        rev_text = all_text[::-1]
-        tgd_text = re.search(r"\)([^)]+)\(", rev_text).group(1)[::-1]
-        post_colon_text = ":".join(strong_text.split(":")[1:])
-        post_colon_text_parts = post_colon_text.split(",")
-        if len(post_colon_text_parts) < 4:
-            err_print(
-                "Problem with post_colon_text_parts (should be at least four)",
-                post_colon_text,
-                "$".join(post_colon_text_parts),
-            )
-        author = post_colon_text_parts[0].strip()
-        work = em_text.strip()
-        reference = ",".join(post_colon_text_parts[2:]).strip()[
-            :-1
-        ]  # drop last character which is a comma
-        tgd_parts = tgd_text.split(",")
-        if len(tgd_parts) != 3:
-            err_print(
-                "Problem with tgd_parts (should be three)",
-                tgd_text,
-                "$".join(tgd_parts),
-            )
-        work_type = tgd_parts[0].strip()
-        genre = tgd_parts[1].strip()
-        work_date = tgd_parts[2].strip()
-        yield ("author", author)
-        yield ("work", work)
-        yield ("reference", reference)
-        yield ("work_type", work_type)
-        yield ("genre", genre)
-        yield ("work_date", work_date)
+# def extract_features(html):
+#     soup = BeautifulSoup(html, "html.parser")
+#     # get id from title <title> Oath 2595 results - Oaths in Archaic and Classical Greece </title> -> 2595
+#     title = soup.find("title").get_text(strip=True)
+#     oath_id = int(title.split()[1])
+#     yield ("oath_id", oath_id)
+#     # get h2 element inside #content from <div id="content" class="feature"><br><h2><strong>Oath ID 2: Aristophanes, <em>Clouds</em>, 82-83,</strong> (literary, Comic., )</h2><br>
+#     h2 = soup.select_one("#content h2")
+#     if h2:
+#         strong_text = h2.find("strong").get_text(strip=True)
+#         em_text = h2.find("em").get_text(strip=True)
+#         all_text = h2.get_text(strip=True)
+#         rev_text = all_text[::-1]
+#         tgd_text = re.search(r"\)([^)]+)\(", rev_text).group(1)[::-1]
+#         post_colon_text = ":".join(strong_text.split(":")[1:])
+#         post_colon_text_parts = post_colon_text.split(",")
+#         if len(post_colon_text_parts) < 4:
+#             err_print(
+#                 "Problem with post_colon_text_parts (should be at least four)",
+#                 post_colon_text,
+#                 "$".join(post_colon_text_parts),
+#             )
+#         author = post_colon_text_parts[0].strip()
+#         work = em_text.strip()
+#         reference = ",".join(post_colon_text_parts[2:]).strip()[
+#             :-1
+#         ]  # drop last character which is a comma
+#         tgd_parts = tgd_text[1:-1].split(",")
+#         if len(tgd_parts) != 3:
+#             err_print(
+#                 "Problem with tgd_parts (should be three)",
+#                 tgd_text,
+#                 "$".join(tgd_parts),
+#             )
+#         work_type = tgd_parts[0].strip()
+#         genre = tgd_parts[1].strip()
+#         work_date = tgd_parts[2].strip()
+#         yield ("author", author)
+#         yield ("work", work)
+#         yield ("reference", reference)
+#         yield ("work_type", work_type)
+#         yield ("genre", genre)
+#         yield ("work_date", work_date)
 
-    rows = soup.find_all("tr")
-    for row in rows:
-        tds = row.find_all("td")
-        if len(tds) >= 2:
-            feature_name = tds[1].get_text(strip=True)
-            if feature_name.endswith(":"):
-                feature_value = tds[2].get_text(strip=True)
-                yield (feature_name[:-1], feature_value)
-
-
-def get_features_for_range(start, end):
-    with sync_playwright() as p:
-        err_print("Launching browser")
-        browser = p.webkit.launch(headless=True)
-        all_features = []
-        for number in range(start, end + 1):
-            url = page(number)
-            html = get_page_content(url, browser)
-            if page_is_invalid(html):
-                err_print(f"Invalid page for oath {number}")
-                time.sleep(60)
-                continue
-            tuples = list(extract_features(html))
-            features = dict(tuples)
-            err_print(f"Extracted features for oath {number}: {features}")
-            all_features.append(features)
-            if number != end:
-                time.sleep(10)
-    return json.dumps(all_features)
+#     rows = soup.find_all("tr")
+#     for row in rows:
+#         tds = row.find_all("td")
+#         if len(tds) >= 2:
+#             feature_name = tds[1].get_text(strip=True)
+#             if feature_name.endswith(":"):
+#                 feature_value = tds[2].get_text(strip=True)
+#                 yield (feature_name[:-1], feature_value)
 
 
-def get_page_content(n, browser):
-    page = browser.new_page()
-    page.goto("https://www.nottingham.ac.uk/~brzoaths/database/")
-    page.locator("#oathReferenceID").click()
-    page.locator("#oathReferenceID").fill(f"{n}")
-    page.get_by_role("button", name="Search").first.click()
-    page.wait_for_load_state("load")
-    return page.content()
+# def get_features_for_range(start, end):
+#     with sync_playwright() as p:
+#         err_print("Launching browser")
+#         browser = p.webkit.launch(headless=True)
+#         all_features = []
+#         for number in range(start, end + 1):
+#             url = page(number)
+#             html = get_page_content(url, browser)
+#             if page_is_invalid(html):
+#                 err_print(f"Invalid page for oath {number}")
+#                 time.sleep(60)
+#                 continue
+#             tuples = list(extract_features(html))
+#             features = dict(tuples)
+#             err_print(f"Extracted features for oath {number}: {features}")
+#             all_features.append(features)
+#             if number != end:
+#                 time.sleep(10)
+#     return json.dumps(all_features)
 
 
-def get_files_for_range(start, end):
-    with sync_playwright() as p:
-        err_print("Launching browser")
-        browser = p.webkit.launch(headless=True)
-        for number in range(start, end + 1):
-            # check if oath is already downloaded
-            if os.path.exists(f"oaths/{number}.html"):
-                err_print(f"Oath {number} already downloaded")
-                continue
-            html = get_page_content(number, browser)
-            with open(f"oaths/{number}.html", "w") as f:
-                f.write(html)
-            err_print(f"Downloaded oath {number}")
+# def get_page_content(n, browser):
+#     page = browser.new_page()
+#     page.goto("https://www.nottingham.ac.uk/~brzoaths/database/")
+#     page.locator("#oathReferenceID").click()
+#     page.locator("#oathReferenceID").fill(f"{n}")
+#     page.get_by_role("button", name="Search").first.click()
+#     page.wait_for_load_state("load")
+#     return page.content()
 
 
-def get_features_from_files(directory):
-    # grab all *.html file in this directory and extract features
-    all_features = []
-    for file in os.listdir(directory):
-        if file.endswith(".html"):
-            with open(directory + "/" + file, "r", errors="ignore") as f:
-                err_print("Extracting features from", file)
-                html = f.read()
-                try:
-                    tuples = list(extract_features(html))
-                except Exception as e:
-                    err_print("Error extracting features from", file)
-                    err_print(e)
-                    continue
-                features = dict(tuples)
-                all_features.append(features)
-    return json.dumps(all_features)
+# def get_files_for_range(start, end):
+#     with sync_playwright() as p:
+#         err_print("Launching browser")
+#         browser = p.webkit.launch(headless=True)
+#         for number in range(start, end + 1):
+#             # check if oath is already downloaded
+#             if os.path.exists(f"oaths/{number}.html"):
+#                 err_print(f"Oath {number} already downloaded")
+#                 continue
+#             html = get_page_content(number, browser)
+#             with open(f"oaths/{number}.html", "w") as f:
+#                 f.write(html)
+#             err_print(f"Downloaded oath {number}")
 
 
-def convert_json_to_csv(json_data, csv_file_path):
-    data = json.loads(json_data)
-    if not data:
-        return
+# def get_features_from_files(directory):
+#     # grab all *.html file in this directory and extract features
+#     all_features = []
+#     for file in os.listdir(directory):
+#         if file.endswith(".html"):
+#             with open(directory + "/" + file, "r", errors="ignore") as f:
+#                 err_print("Extracting features from", file)
+#                 html = f.read()
+#                 try:
+#                     tuples = list(extract_features(html))
+#                 except Exception as e:
+#                     err_print("Error extracting features from", file)
+#                     err_print(e)
+#                     continue
+#                 features = dict(tuples)
+#                 all_features.append(features)
+#     return json.dumps(all_features)
 
-    # Extract headers from the first dictionary
-    headers = data[0].keys()
 
-    with open(csv_file_path, "w", newline="") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=headers)
-        writer.writeheader()
-        for row in data:
-            writer.writerow(row)
+# def convert_json_to_csv(json_data, csv_file_path):
+#     data = json.loads(json_data)
+#     if not data:
+#         return
+
+#     # Extract headers from the first dictionary
+#     headers = data[0].keys()
+
+#     with open(csv_file_path, "w", newline="") as csvfile:
+#         writer = csv.DictWriter(csvfile, fieldnames=headers)
+#         writer.writeheader()
+#         for row in data:
+#             writer.writerow(row)
 
 
 example_html = """
@@ -767,7 +824,30 @@ if __name__ == "__main__":
     # convert_json_to_csv(features_json, "all_features.csv")
     # get_files_for_range(2, 3885)
     scraper = Scraper()
-    scraper.soupify(example_html)
-    features = scraper.extact_features_to_dict()
-    features_json = json.dumps(features)
-    err_print(features_json)
+    html = example_html
+    args = sys.argv[1:]
+    if args:
+        # is it a directory?
+        if os.path.isdir(args[0]):
+            for file in os.listdir(args[0]):
+                scraper.current_file = file
+                if file.endswith(".html"):
+                    with open(args[0] + "/" + file, "r", errors="ignore") as f:
+                        html = f.read()
+                        scraper.soupify(html)
+                        features = scraper.extact_features_to_dict()
+                        features_json = json.dumps(features)
+                        print(features_json)
+        else:
+            with open(args[0], "r") as f:
+                scraper.current_file = args[0]
+                html = f.read()
+                scraper.soupify(html)
+                features = scraper.extact_features_to_dict()
+                features_json = json.dumps(features)
+                print(features_json)
+    else:
+        scraper.soupify(html)
+        features = scraper.extact_features_to_dict()
+        features_json = json.dumps(features)
+        print(features_json)
